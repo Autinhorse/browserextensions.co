@@ -1,0 +1,114 @@
+{
+  "Site": {
+    "name": "Browser Extensions",
+    "tagline": "Powerful browser extensions for capturing, saving, and understanding the web."
+  },
+  "Nav": {
+    "products": "Products",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "feedback": "Feedback"
+  },
+  "Home": {
+    "hero": {
+      "badge": "3 extensions and counting",
+      "title": "Capture the web. On your terms.",
+      "subtitle": "A growing suite of browser extensions to snap web pages, save AI chats, and summarize product reviews, all saved locally or synced where you work.",
+      "ctaPrimary": "Explore extensions",
+      "ctaSecondary": "Join the waitlist"
+    },
+    "products": {
+      "title": "Our extensions",
+      "subtitle": "Each one does a single job, and does it well."
+    },
+    "features": {
+      "title": "Built the right way",
+      "local": {
+        "title": "Local-first",
+        "desc": "Your data is saved to your device by default. You stay in control."
+      },
+      "formats": {
+        "title": "Export anywhere",
+        "desc": "Word, PDF, HTML, Markdown, JSON, Notion, Google Docs and more."
+      },
+      "privacy": {
+        "title": "Privacy by design",
+        "desc": "We never track your content. We only collect what you choose to share."
+      },
+      "fast": {
+        "title": "Fast & lightweight",
+        "desc": "Built to stay out of your way and never slow your browser down."
+      }
+    },
+    "waitlist": {
+      "title": "Be the first to know",
+      "subtitle": "Get notified about new extensions, Pro features, and major updates.",
+      "placeholder": "you@example.com",
+      "button": "Notify me",
+      "success": "You're on the list. Thanks!",
+      "error": "Something went wrong. Please try again.",
+      "invalid": "Please enter a valid email address."
+    }
+  },
+  "Products": {
+    "status": {
+      "available": "Available",
+      "beta": "In beta",
+      "coming-soon": "Coming soon"
+    },
+    "learnMore": "Learn more",
+    "getExtension": "Get the extension",
+    "joinWaitlist": "Join the waitlist",
+    "featuresTitle": "What it does",
+    "web-snapper": {
+      "name": "Web Snapper",
+      "tagline": "Save any web page, all of it, or just the parts you choose.",
+      "description": "Capture full pages or selected regions and save them to local files. Highlight, annotate, and take notes right on the page, then keep everything organized.",
+      "feature1Title": "Full or partial capture",
+      "feature1Desc": "Grab an entire page or select exactly the content you want to keep.",
+      "feature2Title": "Highlight & annotate",
+      "feature2Desc": "Mark up pages with highlights, notes, and annotations as you read.",
+      "feature3Title": "Save locally",
+      "feature3Desc": "Export to local files so your captures are always yours."
+    },
+    "ai-chat-snapper": {
+      "name": "AI Chat Snapper",
+      "tagline": "Turn your AI conversations into documents you own.",
+      "description": "Save chats with AI assistants as Word, PDF, HTML, JSON, or Markdown. Keep them on your device or sync them straight to Notion and Google Docs.",
+      "feature1Title": "Many formats",
+      "feature1Desc": "Export to Word, PDF, HTML, JSON, and Markdown.",
+      "feature2Title": "Sync anywhere",
+      "feature2Desc": "Send conversations to Notion, Google Docs, and more.",
+      "feature3Title": "Keep your history",
+      "feature3Desc": "Never lose an important AI conversation again."
+    },
+    "review-snapper": {
+      "name": "Review Snapper",
+      "tagline": "Understand what shoppers really think at a glance.",
+      "description": "Pull user reviews from product pages, then summarize and compare sentiment so you can make buying decisions faster and with confidence.",
+      "feature1Title": "Collect reviews",
+      "feature1Desc": "Gather user reviews from supported shopping sites.",
+      "feature2Title": "Summarize & compare",
+      "feature2Desc": "See aggregated sentiment and compare products side by side.",
+      "feature3Title": "Decide faster",
+      "feature3Desc": "Cut through the noise and buy with confidence."
+    }
+  },
+  "Footer": {
+    "tagline": "Powerful browser extensions for capturing, saving, and understanding the web.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has moved.",
+    "home": "Back to home"
+  }
+}
