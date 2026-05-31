@@ -3,8 +3,8 @@ export type ProductStatus = 'available' | 'beta' | 'coming-soon';
 export interface Product {
   /** URL slug and i18n key under the `Products` namespace. */
   slug: string;
-  /** lucide-react icon name. */
-  icon: 'Camera' | 'MessageSquare' | 'Star';
+  /** Product icon served from public/. */
+  iconSrc: string;
   /** Tailwind gradient classes used for the product's accent. */
   accent: string;
   status: ProductStatus;
@@ -15,19 +15,19 @@ export interface Product {
 export const products: Product[] = [
   {
     slug: 'web-snapper',
-    icon: 'Camera',
+    iconSrc: '/web-snapper-v2.png',
     accent: 'from-indigo-500 to-violet-500',
     status: 'beta',
   },
   {
     slug: 'ai-chat-snapper',
-    icon: 'MessageSquare',
+    iconSrc: '/ai-chat-snapper-v2.png',
     accent: 'from-sky-500 to-cyan-500',
     status: 'beta',
   },
   {
     slug: 'review-snapper',
-    icon: 'Star',
+    iconSrc: '/review-snapper-v2.png',
     accent: 'from-amber-500 to-orange-500',
     status: 'coming-soon',
   },

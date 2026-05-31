@@ -1,16 +1,10 @@
+import Image from 'next/image';
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
-import {Camera, MessageSquare, Star, type LucideIcon} from 'lucide-react';
-import {products, getProduct, type Product} from '@/lib/products';
+import {products, getProduct} from '@/lib/products';
 import {routing} from '@/i18n/routing';
 import {WaitlistForm} from '@/components/waitlist-form';
-
-const icons: Record<Product['icon'], LucideIcon> = {
-  Camera,
-  MessageSquare,
-  Star,
-};
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -48,7 +42,6 @@ export default async function ProductPage({
 
   const t = await getTranslations('Products');
   const tw = await getTranslations('Home.waitlist');
-  const Icon = icons[product.icon];
   const featureNumbers = [1, 2, 3] as const;
 
   return (
@@ -57,10 +50,15 @@ export default async function ProductPage({
       <section className="relative overflow-hidden border-b border-border/60">
         <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(99,102,241,0.15),transparent)]" />
         <div className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6">
-          <div
-            className={`mx-auto mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${product.accent} text-white`}
-          >
-            <Icon className="h-8 w-8" />
+          <div className="mx-auto mb-6 inline-flex h-20 w-20 items-center justify-center">
+            <Image
+              src={product.iconSrc}
+              alt=""
+              width={80}
+              height={80}
+              className="h-20 w-20 object-contain"
+              priority
+            />
           </div>
           <h1 className="text-4xl font-bold tracking-tight">{t(`${slug}.name`)}</h1>
           <div className="mt-4">

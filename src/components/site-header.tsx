@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {LocaleSwitcher} from './locale-switcher';
@@ -10,9 +11,14 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 font-semibold">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-violet-500 text-sm font-bold text-white">
-            B
-          </span>
+          <Image
+            src="/brand-icon-v3.png"
+            alt=""
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded-lg object-cover"
+            priority
+          />
           <span className="hidden sm:inline">{tSite('name')}</span>
         </Link>
 

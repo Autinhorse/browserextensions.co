@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {products} from '@/lib/products';
@@ -11,9 +12,13 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 font-semibold">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-indigo-500 to-violet-500 text-xs font-bold text-white">
-              B
-            </span>
+            <Image
+              src="/brand-icon-v3.png"
+              alt=""
+              width={28}
+              height={28}
+              className="h-7 w-7 rounded-md object-cover"
+            />
             browserextensions.co
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted">{t('tagline')}</p>
