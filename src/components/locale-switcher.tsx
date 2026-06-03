@@ -1,6 +1,5 @@
 'use client';
 
-import {useParams} from 'next/navigation';
 import {useTransition} from 'react';
 import {useLocale} from 'next-intl';
 import {usePathname, useRouter} from '@/i18n/navigation';
@@ -10,8 +9,10 @@ export function LocaleSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const params = useParams();
   const [isPending, startTransition] = useTransition();
+
+  // Nothing to switch between while the site is single-language.
+  if (locales.length < 2) return null;
 
   return (
     <select
@@ -21,8 +22,7 @@ export function LocaleSwitcher() {
       onChange={(event) => {
         const next = event.target.value as Locale;
         startTransition(() => {
-          // @ts-expect-error -- pathname/params are compatible at runtime
-          router.replace({pathname, params}, {locale: next});
+          router.replace(pathname, {locale: next});
         });
       }}
       className="cursor-pointer rounded-md border border-border bg-surface px-2 py-1.5 text-sm text-muted outline-none transition hover:text-foreground"

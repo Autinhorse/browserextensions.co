@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import {useTranslations} from 'next-intl';
 import {ArrowRight} from 'lucide-react';
+import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import type {Product} from '@/lib/products';
 
-export function ProductCard({product}: {product: Product}) {
-  const t = useTranslations('Products');
+export async function ProductCard({product}: {product: Product}) {
+  const t = await getTranslations('Products');
 
   return (
     <Link

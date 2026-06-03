@@ -15,19 +15,19 @@ export interface Product {
 export const products: Product[] = [
   {
     slug: 'web-snapper',
-    iconSrc: '/web-snapper-v2.png',
+    iconSrc: '/web-snapper-v3.png',
     accent: 'from-indigo-500 to-violet-500',
     status: 'beta',
   },
   {
     slug: 'ai-chat-snapper',
-    iconSrc: '/ai-chat-snapper-v2.png',
+    iconSrc: '/ai-chat-snapper-v3.png',
     accent: 'from-sky-500 to-cyan-500',
     status: 'beta',
   },
   {
     slug: 'review-snapper',
-    iconSrc: '/review-snapper-v2.png',
+    iconSrc: '/review-snapper-v3.png',
     accent: 'from-amber-500 to-orange-500',
     status: 'coming-soon',
   },

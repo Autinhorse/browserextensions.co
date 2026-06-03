@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {products} from '@/lib/products';
 
-export function SiteFooter() {
-  const t = useTranslations('Footer');
-  const tp = useTranslations('Products');
+export async function SiteFooter() {
+  const t = await getTranslations('Footer');
+  const tp = await getTranslations('Products');
 
   return (
     <footer className="border-t border-border/60">
@@ -13,7 +13,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-2 font-semibold">
             <Image
-              src="/brand-icon-v3.png"
+              src="/brand-icon-v5.png"
               alt=""
               width={28}
               height={28}
@@ -54,9 +54,12 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link href="/#waitlist" className="transition hover:text-foreground">
+              <a
+                href="mailto:support@browserextensions.co"
+                className="transition hover:text-foreground"
+              >
                 {t('contact')}
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -65,12 +68,12 @@ export function SiteFooter() {
           <h3 className="text-sm font-semibold">{t('legal')}</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted">
             <li>
-              <Link href="/" className="transition hover:text-foreground">
+              <Link href="/privacy" className="transition hover:text-foreground">
                 {t('privacy')}
               </Link>
             </li>
             <li>
-              <Link href="/" className="transition hover:text-foreground">
+              <Link href="/terms" className="transition hover:text-foreground">
                 {t('terms')}
               </Link>
             </li>

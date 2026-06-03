@@ -14,6 +14,6 @@ export const rtlLocales: Locale[] = [];
 export const routing = defineRouting({
   locales,
   defaultLocale: 'en',
-  // Keep locale-aware routing in place; add prefixed locales when translations exist.
-  localePrefix: 'as-needed',
+  // Keep user-facing URLs unprefixed while there is only one public locale.
+  localePrefix: 'never',
 });

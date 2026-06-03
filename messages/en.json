@@ -60,38 +60,169 @@
     "getExtension": "Get the extension",
     "joinWaitlist": "Join the waitlist",
     "featuresTitle": "What it does",
+    "page": {
+      "highlightsTitle": "Highlights",
+      "deepDiveTitle": "Feature deep dive",
+      "platformsTitle": "Supported platforms",
+      "formatsTitle": "Export formats",
+      "privacyTitle": "Privacy and permissions",
+      "privacyLink": "Read the privacy policy",
+      "howTitle": "How it works",
+      "useCasesTitle": "Use cases",
+      "faqTitle": "FAQ",
+      "finalCtaTitle": "Ready to try it?",
+      "visualLabel": "Workflow preview"
+    },
     "web-snapper": {
       "name": "Web Snapper",
       "tagline": "Save any web page, all of it, or just the parts you choose.",
+      "seoTitle": "Web Snapper - Capture, annotate, and save web pages",
+      "seoDescription": "Capture full web pages or selected sections, annotate what matters, and save clean local exports from your browser.",
       "description": "Capture full pages or selected regions and save them to local files. Highlight, annotate, and take notes right on the page, then keep everything organized.",
       "feature1Title": "Full or partial capture",
       "feature1Desc": "Grab an entire page or select exactly the content you want to keep.",
       "feature2Title": "Highlight & annotate",
       "feature2Desc": "Mark up pages with highlights, notes, and annotations as you read.",
       "feature3Title": "Save locally",
-      "feature3Desc": "Export to local files so your captures are always yours."
+      "feature3Desc": "Export to local files so your captures are always yours.",
+      "platforms": ["Web pages", "Articles", "Docs", "Dashboards"],
+      "formats": ["PNG", "PDF", "HTML", "Markdown", "Local files"],
+      "privacyPoints": ["Runs only when you choose to capture", "Local-first exports", "No ads or content tracking"],
+      "steps": ["Open the page you want to keep", "Capture the whole page or choose a section", "Annotate, export, and save it locally"],
+      "useCases": ["Research archives", "Design references", "Documentation snippets", "Bug reports", "Receipts and records"],
+      "deepDive": [
+        {
+          "title": "Capture exactly what matters",
+          "desc": "Save full pages for complete context or select a focused region when you only need one section.",
+          "visual": "Full page / Selection"
+        },
+        {
+          "title": "Add context before you save",
+          "desc": "Highlight important details, add notes, and keep the reason you saved a page attached to the capture.",
+          "visual": "Highlight / Note"
+        },
+        {
+          "title": "Keep portable records",
+          "desc": "Export captures into files you control, so useful web content stays available after the tab is gone.",
+          "visual": "Export / Local"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can Web Snapper capture a full page?",
+          "answer": "Yes. It is designed for full-page capture as well as selected sections."
+        },
+        {
+          "question": "Does Web Snapper upload captured pages?",
+          "answer": "No. The product is designed around local-first exports."
+        },
+        {
+          "question": "Can I annotate captures?",
+          "answer": "Yes. The workflow includes highlights, notes, and annotations."
+        }
+      ]
     },
     "ai-chat-snapper": {
       "name": "AI Chat Snapper",
       "tagline": "Turn your AI conversations into documents you own.",
+      "seoTitle": "AI Chat Snapper - Export ChatGPT, Claude, and Gemini chats",
+      "seoDescription": "Export AI conversations from ChatGPT, Claude, and Gemini to PDF, Word, Markdown, JSON, images, Notion, and Google Docs.",
       "description": "Save chats with AI assistants as Word, PDF, HTML, JSON, or Markdown. Keep them on your device or sync them straight to Notion and Google Docs.",
       "feature1Title": "Many formats",
       "feature1Desc": "Export to Word, PDF, HTML, JSON, and Markdown.",
       "feature2Title": "Sync anywhere",
       "feature2Desc": "Send conversations to Notion, Google Docs, and more.",
       "feature3Title": "Keep your history",
-      "feature3Desc": "Never lose an important AI conversation again."
+      "feature3Desc": "Never lose an important AI conversation again.",
+      "platforms": ["ChatGPT", "Claude", "Gemini"],
+      "formats": ["PDF", "Word", "Markdown", "TXT", "JSON", "Image", "Notion", "Google Docs"],
+      "privacyPoints": ["Local exports stay on your device", "No analytics, ads, or tracking", "Optional Notion and Google exports only run when you choose"],
+      "steps": ["Open a supported AI conversation", "Choose an export format or destination", "Save locally or send it to your workspace"],
+      "useCases": ["Research conversations", "Coding help archives", "Client and project notes", "Prompt libraries", "Shareable AI-generated documents"],
+      "deepDive": [
+        {
+          "title": "Export readable documents",
+          "desc": "Turn long AI conversations into structured files that are easier to read, search, and share.",
+          "visual": "Chat -> Document"
+        },
+        {
+          "title": "Choose the right format",
+          "desc": "Save polished PDFs, editable Word files, clean Markdown, JSON records, or image snapshots.",
+          "visual": "PDF / DOCX / MD"
+        },
+        {
+          "title": "Send to your workspace",
+          "desc": "When you choose, send exports directly to Notion or Google Docs under your own account.",
+          "visual": "Notion / Google Docs"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which AI platforms are supported?",
+          "answer": "AI Chat Snapper supports ChatGPT, Claude, and Gemini."
+        },
+        {
+          "question": "Does it upload my conversations to your servers?",
+          "answer": "No. Local exports are processed on your device. Optional Notion and Google Docs exports go directly from your browser to the service you choose."
+        },
+        {
+          "question": "Can I export to PDF and Word?",
+          "answer": "Yes. AI Chat Snapper supports PDF, Word, Markdown, TXT, JSON, images, Notion, and Google Docs."
+        },
+        {
+          "question": "Where can I read the privacy policy?",
+          "answer": "The AI Chat Snapper privacy policy is available from this product page and the site privacy page."
+        }
+      ]
     },
     "review-snapper": {
       "name": "Review Snapper",
       "tagline": "Understand what shoppers really think at a glance.",
+      "seoTitle": "Review Snapper - Collect and summarize product reviews",
+      "seoDescription": "Collect product reviews from shopping pages, summarize sentiment, and compare what customers really think before you buy.",
       "description": "Pull user reviews from product pages, then summarize and compare sentiment so you can make buying decisions faster and with confidence.",
       "feature1Title": "Collect reviews",
       "feature1Desc": "Gather user reviews from supported shopping sites.",
       "feature2Title": "Summarize & compare",
       "feature2Desc": "See aggregated sentiment and compare products side by side.",
       "feature3Title": "Decide faster",
-      "feature3Desc": "Cut through the noise and buy with confidence."
+      "feature3Desc": "Cut through the noise and buy with confidence.",
+      "platforms": ["Product pages", "Shopping sites", "Review sections"],
+      "formats": ["Summary", "Sentiment", "Comparison", "CSV", "Markdown"],
+      "privacyPoints": ["Reads reviews only when you ask it to", "Designed for focused product research", "No ads or review-content tracking"],
+      "steps": ["Open a supported product page", "Collect the available customer reviews", "Summarize sentiment and compare key themes"],
+      "useCases": ["Buying decisions", "Product research", "Competitor comparison", "Market feedback", "Review trend summaries"],
+      "deepDive": [
+        {
+          "title": "Collect the useful signal",
+          "desc": "Gather visible customer reviews from product pages so you can work from one organized view.",
+          "visual": "Reviews / Themes"
+        },
+        {
+          "title": "Summarize common patterns",
+          "desc": "See repeated praise, complaints, tradeoffs, and sentiment without reading every review manually.",
+          "visual": "Pros / Cons"
+        },
+        {
+          "title": "Compare before you buy",
+          "desc": "Use review themes to compare products side by side and make faster decisions.",
+          "visual": "A vs B"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Review Snapper available now?",
+          "answer": "Review Snapper is coming soon. You can join the waitlist for updates."
+        },
+        {
+          "question": "What does it summarize?",
+          "answer": "It is designed to summarize customer review themes, sentiment, pros, cons, and comparison points."
+        },
+        {
+          "question": "Can it compare products?",
+          "answer": "Product comparison is part of the planned workflow."
+        }
+      ]
     }
   },
   "Footer": {
@@ -105,6 +236,68 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "rights": "All rights reserved."
+  },
+  "Privacy": {
+    "title": "Privacy",
+    "subtitle": "Each browser extension has its own privacy policy so permissions and data handling stay clear.",
+    "intro": "browserextensions.co builds local-first browser extensions. Product-specific privacy policies explain what each extension can access, why it needs those permissions, and how your data is handled.",
+    "aiChatSnapper": {
+      "title": "AI Chat Snapper",
+      "description": "Privacy policy for exporting AI conversations locally or to optional Notion and Google Docs destinations."
+    },
+    "comingSoon": "Privacy policies for Web Snapper and Review Snapper will be published before those extensions are released.",
+    "contact": "Questions? Contact us at support@browserextensions.co."
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "subtitle": "Terms for using browserextensions.co and our browser extensions.",
+    "updated": "Last updated: 2026-06-01",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of these terms",
+        "body": "By using browserextensions.co or any browser extension we publish, you agree to these Terms of Service. If you do not agree, please do not use the site or extensions."
+      },
+      "products": {
+        "title": "Our products",
+        "body": "Our extensions are productivity tools for capturing, exporting, saving, and understanding web content. Features may change over time as we improve the products."
+      },
+      "responsibility": {
+        "title": "Your responsibility",
+        "body": "You are responsible for the content you capture, export, upload, store, or share with our extensions. You must use the site and extensions lawfully and respect the rights and terms of the websites and services you use them with."
+      },
+      "thirdParties": {
+        "title": "Third-party services",
+        "body": "Some optional features may connect to third-party services such as Notion, Google Drive, Google Docs, Chrome Web Store, payment providers, or other platforms. Your use of those services is governed by their own terms and privacy policies."
+      },
+      "availability": {
+        "title": "Availability and changes",
+        "body": "The site and extensions are provided as available. We may update, suspend, remove, or change features at any time, including to improve security, compatibility, or user experience."
+      },
+      "paid": {
+        "title": "Paid features",
+        "body": "If we introduce paid plans, Pro features, subscriptions, or licenses, the checkout page or product page will describe pricing, renewal, cancellation, and refund terms before purchase."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual property",
+        "body": "browserextensions.co, our extension names, logos, interface designs, website content, and product materials belong to us or our licensors. You may not copy, modify, redistribute, or use them in a way that suggests endorsement without permission."
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "body": "The site and extensions are provided without warranties of any kind. We do not guarantee that they will be uninterrupted, error-free, or suitable for every use case."
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "body": "To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, profits, or business arising from your use of the site or extensions."
+      },
+      "changes": {
+        "title": "Changes to these terms",
+        "body": "We may update these terms from time to time. When we do, we will update the date above. Continued use of the site or extensions after changes means you accept the updated terms."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "If you have questions about these terms, contact us at support@browserextensions.co."
+      }
+    }
   },
   "NotFound": {
     "title": "Page not found",
