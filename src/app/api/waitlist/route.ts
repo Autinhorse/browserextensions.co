@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (url && key) {
-    const supabase = createClient(url, key);
+    const supabase = createClient(url, key, {db: {schema: 'browserext'}});
     const {error} = await supabase.from('waitlist').insert({email});
     // 23505 = unique violation: email already on the list, treat as success.
     if (error && error.code !== '23505') {

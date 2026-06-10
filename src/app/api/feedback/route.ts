@@ -129,7 +129,7 @@ export async function POST(request: Request) {
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (url && key) {
-    const supabase = createClient(url, key);
+    const supabase = createClient(url, key, {db: {schema: 'browserext'}});
     const {data, error} = await supabase
       .from('feedback')
       .insert(record)

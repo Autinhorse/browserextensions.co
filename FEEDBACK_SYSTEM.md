@@ -1,6 +1,6 @@
 # Feedback System Notes
 
-Last updated: 2026-06-03
+Last updated: 2026-06-10
 
 ## Current Status
 
@@ -43,10 +43,11 @@ The admin page asks for `FEEDBACK_ADMIN_TOKEN`.
   - Up to 10 MB each.
   - Intended for saved HTML, screenshots, generated/exported files, or error files.
   - UI asks users to upload only when files do not contain private data.
-- Supabase persistence:
-  - `feedback` stores the main report.
-  - `feedback_attachments` stores attachment metadata.
-  - `feedback-attachments` private Storage bucket stores uploaded files.
+- Supabase persistence (all app tables live in the `browserext` schema):
+  - `browserext.feedback` stores the main report.
+  - `browserext.feedback_attachments` stores attachment metadata.
+  - `feedback-attachments` private Storage bucket stores uploaded files
+    (Storage buckets are project-wide, not schema-scoped).
 - Storage paths use UUID-only ASCII names to avoid Supabase Storage key errors with Chinese or special filenames.
 - Original filenames are preserved in `feedback_attachments.original_filename`.
 - Admin page can:
@@ -75,7 +76,9 @@ src/i18n/routing.ts
 
 ## Supabase Setup
 
-Create a Supabase project, then run the full SQL in:
+This site shares a single Supabase project with other apps to avoid per-project
+cost; each app is isolated in its own Postgres schema. This site uses the
+`browserext` schema. Run the full SQL in:
 
 ```text
 supabase/schema.sql
@@ -84,11 +87,23 @@ supabase/schema.sql
 It creates or updates:
 
 ```text
-public.waitlist
-public.feedback
-public.feedback_attachments
-storage bucket: feedback-attachments
+schema: browserext
+browserext.waitlist
+browserext.feedback
+browserext.feedback_attachments
+storage bucket: feedback-attachments (project-wide, not schema-scoped)
 ```
+
+After running the SQL, expose the schema to the REST API:
+
+```text
+Project Settings -> API -> Exposed schemas -> add `browserext`
+```
+
+Without this step PostgREST cannot see the tables and the API routes fail.
+
+The Supabase clients set the default schema via `{db: {schema: 'browserext'}}`,
+so query code uses plain `.from('feedback')` and resolves to `browserext`.
 
 The bucket is private. API routes use the server-side service role key to insert rows, upload files, and create short-lived signed URLs.
 
@@ -146,7 +161,7 @@ npm run build passes
 
 - If feedback succeeds without Supabase configured, local API logs a warning and does not persist data.
 - If an attachment upload fails with `Invalid key`, check that `src/app/api/feedback/route.ts` still uses UUID storage paths rather than raw filenames.
-- If SQL was run before `issue_url` existed, rerun `supabase/schema.sql`; it includes `alter table public.feedback add column if not exists issue_url text`.
+- If SQL was run before `issue_url` existed, rerun `supabase/schema.sql`; it includes `alter table browserext.feedback add column if not exists issue_url text`.
 - Current admin auth is a simple bearer token. For stronger security, consider Supabase Auth, GitHub OAuth, or another real login layer later.
 
 ## Suggested Next Steps
