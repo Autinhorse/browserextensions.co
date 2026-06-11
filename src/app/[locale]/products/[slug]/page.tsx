@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
+import {HashLink} from '@/components/hash-link';
 import {products, getProduct} from '@/lib/products';
 import {routing} from '@/i18n/routing';
 import {WaitlistForm} from '@/components/waitlist-form';
@@ -22,12 +23,16 @@ type DeepDive = {
   visual: string;
 };
 
+type Highlight = {
+  title: string;
+  desc: string;
+};
+
 type Faq = {
   question: string;
   answer: string;
 };
 
-const featureNumbers = [1, 2, 3] as const;
 const stepIcons = [MousePointer2, FileText, Download] as const;
 
 export function generateStaticParams() {
@@ -73,8 +78,12 @@ export default async function ProductPage({
 
   const t = await getTranslations('Products');
   const tw = await getTranslations('Home.waitlist');
+  const highlights = t.raw(`${slug}.highlights`) as Highlight[];
   const platforms = t.raw(`${slug}.platforms`) as string[];
   const formats = t.raw(`${slug}.formats`) as string[];
+  const destinations = t.has(`${slug}.destinations`)
+    ? (t.raw(`${slug}.destinations`) as string[])
+    : null;
   const privacyPoints = t.raw(`${slug}.privacyPoints`) as string[];
   const steps = t.raw(`${slug}.steps`) as string[];
   const useCases = t.raw(`${slug}.useCases`) as string[];
@@ -115,13 +124,14 @@ export default async function ProductPage({
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               {product.status === 'coming-soon' || !product.chromeUrl ? (
-                <a
-                  href="#waitlist"
+                <HashLink
+                  href="/#waitlist"
+                  hash="waitlist"
                   className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition hover:bg-surface"
                 >
                   {t('joinWaitlist')}
                   <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-                </a>
+                </HashLink>
               ) : (
                 <a
                   href={product.chromeUrl}
@@ -192,12 +202,10 @@ export default async function ProductPage({
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="text-2xl font-bold">{t('page.highlightsTitle')}</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {featureNumbers.map((n) => (
-            <div key={n} className="rounded-lg border border-border bg-surface/40 p-6">
-              <h3 className="font-semibold">{t(`${slug}.feature${n}Title`)}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted">
-                {t(`${slug}.feature${n}Desc`)}
-              </p>
+          {highlights.map((item) => (
+            <div key={item.title} className="rounded-lg border border-border bg-surface/40 p-6">
+              <h3 className="font-semibold">{item.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-muted">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -229,7 +237,11 @@ export default async function ProductPage({
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-6 px-4 py-16 sm:px-6 lg:grid-cols-2">
+      <section
+        className={`mx-auto grid max-w-6xl gap-6 px-4 py-16 sm:px-6 ${
+          destinations ? 'lg:grid-cols-3' : 'lg:grid-cols-2'
+        }`}
+      >
         <div className="rounded-lg border border-border bg-surface/40 p-6">
           <h2 className="text-xl font-semibold">{t('page.platformsTitle')}</h2>
           <div className="mt-5 flex flex-wrap gap-2">
@@ -251,6 +263,19 @@ export default async function ProductPage({
             ))}
           </div>
         </div>
+
+        {destinations && (
+          <div className="rounded-lg border border-border bg-surface/40 p-6">
+            <h2 className="text-xl font-semibold">{t('page.destinationsTitle')}</h2>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {destinations.map((destination) => (
+                <span key={destination} className="rounded-full border border-border px-3 py-1 text-sm text-muted">
+                  {destination}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-16 sm:px-6 lg:grid-cols-[0.8fr_1.2fr]">

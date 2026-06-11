@@ -1,7 +1,7 @@
 {
   "Site": {
     "name": "Browser Extensions",
-    "tagline": "Powerful browser extensions for capturing, saving, and understanding the web."
+    "tagline": "A growing suite of focused browser extensions that make everyday work lighter - capture pages, export AI chats, summarize reviews, and more."
   },
   "Nav": {
     "products": "Products",
@@ -12,8 +12,8 @@
   "Home": {
     "hero": {
       "badge": "3 extensions and counting",
-      "title": "Capture the web. On your terms.",
-      "subtitle": "A growing suite of browser extensions to snap web pages, save AI chats, and summarize product reviews, all saved locally or synced where you work.",
+      "title": "Browser extensions that make everyday work lighter.",
+      "subtitle": "<brand>browserextensions.co</brand> is a growing suite of focused browser tools - snap web pages, export your AI chats, summarize product reviews, and more on the way. Each one quietly removes friction from your day, keeps your data on your device by default, and syncs to the apps you already work in.",
       "ctaPrimary": "Explore extensions",
       "ctaSecondary": "Join the waitlist"
     },
@@ -65,6 +65,7 @@
       "deepDiveTitle": "Feature deep dive",
       "platformsTitle": "Supported platforms",
       "formatsTitle": "Export formats",
+      "destinationsTitle": "Save to",
       "privacyTitle": "Privacy and permissions",
       "privacyLink": "Read the privacy policy",
       "howTitle": "How it works",
@@ -79,12 +80,20 @@
       "seoTitle": "Web Snapper - Capture, annotate, and save web pages",
       "seoDescription": "Capture full web pages or selected sections, annotate what matters, and save clean local exports from your browser.",
       "description": "Capture full pages or selected regions and save them to local files. Highlight, annotate, and take notes right on the page, then keep everything organized.",
-      "feature1Title": "Full or partial capture",
-      "feature1Desc": "Grab an entire page or select exactly the content you want to keep.",
-      "feature2Title": "Highlight & annotate",
-      "feature2Desc": "Mark up pages with highlights, notes, and annotations as you read.",
-      "feature3Title": "Save locally",
-      "feature3Desc": "Export to local files so your captures are always yours.",
+      "highlights": [
+        {
+          "title": "Full or partial capture",
+          "desc": "Grab an entire page or select exactly the content you want to keep."
+        },
+        {
+          "title": "Highlight & annotate",
+          "desc": "Mark up pages with highlights, notes, and annotations as you read."
+        },
+        {
+          "title": "Save locally",
+          "desc": "Export to local files so your captures are always yours."
+        }
+      ],
       "platforms": ["Web pages", "Articles", "Docs", "Dashboards"],
       "formats": ["PNG", "PDF", "HTML", "Markdown", "Local files"],
       "privacyPoints": ["Runs only when you choose to capture", "Local-first exports", "No ads or content tracking"],
@@ -125,19 +134,40 @@
     "ai-chat-snapper": {
       "name": "AI Chat Snapper",
       "tagline": "Turn your AI conversations into documents you own.",
-      "seoTitle": "AI Chat Snapper - Export ChatGPT, Claude, and Gemini chats",
-      "seoDescription": "Export AI conversations from ChatGPT, Claude, and Gemini to PDF, Word, Markdown, JSON, images, Notion, and Google Docs.",
-      "description": "Save chats with AI assistants as Word, PDF, HTML, JSON, or Markdown. Keep them on your device or sync them straight to Notion and Google Docs.",
-      "feature1Title": "Many formats",
-      "feature1Desc": "Export to Word, PDF, HTML, JSON, and Markdown.",
-      "feature2Title": "Sync anywhere",
-      "feature2Desc": "Send conversations to Notion, Google Docs, and more.",
-      "feature3Title": "Keep your history",
-      "feature3Desc": "Never lose an important AI conversation again.",
-      "platforms": ["ChatGPT", "Claude", "Gemini"],
-      "formats": ["PDF", "Word", "Markdown", "TXT", "JSON", "Image", "Notion", "Google Docs"],
-      "privacyPoints": ["Local exports stay on your device", "No analytics, ads, or tracking", "Optional Notion and Google exports only run when you choose"],
-      "steps": ["Open a supported AI conversation", "Choose an export format or destination", "Save locally or send it to your workspace"],
+      "seoTitle": "AI Chat Snapper - Export ChatGPT, Claude, Gemini and 7 more AI chats",
+      "seoDescription": "Export conversations from 10 AI assistants - ChatGPT, Claude, Gemini, Grok, DeepSeek and more - to PDF, Word, PNG, Markdown, TXT, or JSON. Save 100% offline, or send to Notion, Google Docs, and Obsidian.",
+      "description": "Save chats from 10 AI assistants - ChatGPT, Claude, Gemini, Grok, Mistral, DeepSeek, Qwen, Kimi, Doubao, and Perplexity - as PDF, Word, PNG, Markdown, TXT, or JSON. Keep everything 100% offline on your device, or send it to Notion, Google Docs, or Obsidian. Available in 10 languages.",
+      "highlights": [
+        {
+          "title": "Works with 10 AI assistants",
+          "desc": "Export from ChatGPT, Claude, Gemini, Grok, Mistral, DeepSeek, Qwen, Kimi, Doubao, and Perplexity."
+        },
+        {
+          "title": "Six export formats",
+          "desc": "Save as PDF, Word, PNG image, Markdown, TXT, or JSON."
+        },
+        {
+          "title": "Save where you work",
+          "desc": "Keep a local file, or send to Notion, Google Docs, or your Obsidian vault."
+        },
+        {
+          "title": "100% offline option",
+          "desc": "Local exports never leave your device - no account, no upload, fully private."
+        },
+        {
+          "title": "Available in 10 languages",
+          "desc": "Use the extension in your language, with 10 interface languages built in."
+        },
+        {
+          "title": "Keep your history",
+          "desc": "Never lose an important AI conversation again."
+        }
+      ],
+      "platforms": ["ChatGPT", "Claude", "Gemini", "Grok", "Mistral", "DeepSeek", "Qwen", "Kimi", "Doubao", "Perplexity"],
+      "formats": ["PDF", "Word", "PNG", "Markdown", "TXT", "JSON"],
+      "destinations": ["Local file", "Notion", "Google Docs", "Obsidian"],
+      "privacyPoints": ["Local exports stay 100% on your device", "Works fully offline - no account or sign-in required", "No analytics, ads, or tracking", "Optional Notion, Google Docs, and Obsidian exports only run when you choose"],
+      "steps": ["Open a chat in any supported AI assistant", "Choose a format - PDF, Word, PNG, Markdown, TXT, or JSON", "Save locally or send it to Notion, Google Docs, or Obsidian"],
       "useCases": ["Research conversations", "Coding help archives", "Client and project notes", "Prompt libraries", "Shareable AI-generated documents"],
       "deepDive": [
         {
@@ -147,27 +177,31 @@
         },
         {
           "title": "Choose the right format",
-          "desc": "Save polished PDFs, editable Word files, clean Markdown, JSON records, or image snapshots.",
-          "visual": "PDF / DOCX / MD"
+          "desc": "Save polished PDFs, editable Word files, PNG snapshots, clean Markdown, TXT, or JSON records.",
+          "visual": "PDF / DOCX / PNG"
         },
         {
-          "title": "Send to your workspace",
-          "desc": "When you choose, send exports directly to Notion or Google Docs under your own account.",
-          "visual": "Notion / Google Docs"
+          "title": "Save where you work",
+          "desc": "Keep exports as local files, or send them to Notion, Google Docs, or your local Obsidian vault.",
+          "visual": "Notion / Obsidian"
         }
       ],
       "faq": [
         {
           "question": "Which AI platforms are supported?",
-          "answer": "AI Chat Snapper supports ChatGPT, Claude, and Gemini."
+          "answer": "AI Chat Snapper works with 10 AI assistants: ChatGPT, Claude, Gemini, Grok, Mistral, DeepSeek, Qwen, Kimi, Doubao, and Perplexity."
         },
         {
           "question": "Does it upload my conversations to your servers?",
-          "answer": "No. Local exports are processed on your device. Optional Notion and Google Docs exports go directly from your browser to the service you choose."
+          "answer": "No. Exports are processed locally on your device, and the extension can run 100% offline. Optional Notion, Google Docs, and Obsidian exports go directly from your browser to the destination you choose."
         },
         {
-          "question": "Can I export to PDF and Word?",
-          "answer": "Yes. AI Chat Snapper supports PDF, Word, Markdown, TXT, JSON, images, Notion, and Google Docs."
+          "question": "Which export formats and destinations can I use?",
+          "answer": "You can export to PDF, Word, PNG image, Markdown, TXT, and JSON, and save to a local file, Notion, Google Docs, or Obsidian."
+        },
+        {
+          "question": "Is the extension available in my language?",
+          "answer": "AI Chat Snapper ships with 10 interface languages, so you can use it in your preferred language."
         },
         {
           "question": "Where can I read the privacy policy?",
@@ -181,12 +215,20 @@
       "seoTitle": "Review Snapper - Collect and summarize product reviews",
       "seoDescription": "Collect product reviews from shopping pages, summarize sentiment, and compare what customers really think before you buy.",
       "description": "Pull user reviews from product pages, then summarize and compare sentiment so you can make buying decisions faster and with confidence.",
-      "feature1Title": "Collect reviews",
-      "feature1Desc": "Gather user reviews from supported shopping sites.",
-      "feature2Title": "Summarize & compare",
-      "feature2Desc": "See aggregated sentiment and compare products side by side.",
-      "feature3Title": "Decide faster",
-      "feature3Desc": "Cut through the noise and buy with confidence.",
+      "highlights": [
+        {
+          "title": "Collect reviews",
+          "desc": "Gather user reviews from supported shopping sites."
+        },
+        {
+          "title": "Summarize & compare",
+          "desc": "See aggregated sentiment and compare products side by side."
+        },
+        {
+          "title": "Decide faster",
+          "desc": "Cut through the noise and buy with confidence."
+        }
+      ],
       "platforms": ["Product pages", "Shopping sites", "Review sections"],
       "formats": ["Summary", "Sentiment", "Comparison", "CSV", "Markdown"],
       "privacyPoints": ["Reads reviews only when you ask it to", "Designed for focused product research", "No ads or review-content tracking"],
@@ -226,7 +268,7 @@
     }
   },
   "Footer": {
-    "tagline": "Powerful browser extensions for capturing, saving, and understanding the web.",
+    "tagline": "A growing suite of focused browser extensions that make everyday work lighter.",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",

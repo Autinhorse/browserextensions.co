@@ -1,9 +1,9 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {ArrowRight} from 'lucide-react';
-import {Link} from '@/i18n/navigation';
 import {products} from '@/lib/products';
 import {ProductCard} from '@/components/product-card';
 import {WaitlistForm} from '@/components/waitlist-form';
+import {HashLink} from '@/components/hash-link';
 
 const featureKeys = ['local', 'formats', 'privacy', 'fast'] as const;
 
@@ -25,26 +25,32 @@ export default async function HomePage({
           <span className="inline-flex items-center rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted">
             {t('hero.badge')}
           </span>
-          <h1 className="mx-auto mt-6 max-w-3xl bg-gradient-to-b from-white to-white/60 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-6xl">
+          <h1 className="mx-auto mt-6 max-w-3xl text-balance bg-gradient-to-b from-white to-white/70 bg-clip-text pb-1 text-4xl font-bold leading-[1.12] tracking-tight text-transparent sm:text-5xl lg:text-6xl">
             {t('hero.title')}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted">
-            {t('hero.subtitle')}
+            {t.rich('hero.subtitle', {
+              brand: (chunks) => (
+                <span className="font-medium text-brand">{chunks}</span>
+              ),
+            })}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
+            <HashLink
               href="/#products"
+              hash="products"
               className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-500 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
             >
               {t('hero.ctaPrimary')}
               <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-            </Link>
-            <Link
+            </HashLink>
+            <HashLink
               href="/#waitlist"
+              hash="waitlist"
               className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition hover:bg-surface"
             >
               {t('hero.ctaSecondary')}
-            </Link>
+            </HashLink>
           </div>
         </div>
       </section>
