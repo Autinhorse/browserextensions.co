@@ -54,13 +54,9 @@ export async function SiteFooter() {
               </HashLink>
             </li>
             <li>
-              <HashLink
-                href="/#waitlist"
-                hash="waitlist"
-                className="transition hover:text-foreground"
-              >
+              <Link href="/blog" className="transition hover:text-foreground">
                 {t('blog')}
-              </HashLink>
+              </Link>
             </li>
             <li>
               <a

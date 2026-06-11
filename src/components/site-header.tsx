@@ -27,7 +27,10 @@ export async function SiteHeader() {
             {t('products')}
           </Link>
           <Link href="/#features" className="transition hover:text-foreground">
-            {t('pricing')}
+            {t('features')}
+          </Link>
+          <Link href="/blog" className="transition hover:text-foreground">
+            {t('blog')}
           </Link>
           <Link href="/feedback" className="transition hover:text-foreground">
             {t('feedback')}

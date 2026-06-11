@@ -5,7 +5,7 @@
   },
   "Nav": {
     "products": "Products",
-    "pricing": "Pricing",
+    "features": "Features",
     "blog": "Blog",
     "feedback": "Feedback"
   },
@@ -266,6 +266,15 @@
         }
       ]
     }
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Guides, tutorials, and updates for getting more out of your browser extensions.",
+    "metaTitle": "Blog",
+    "metaDescription": "Tutorials and guides from browserextensions.co - export AI chats, capture the web, and work more efficiently in your browser.",
+    "readingTime": "{minutes} min read",
+    "backToBlog": "Back to all posts",
+    "empty": "No posts yet. Check back soon."
   },
   "Footer": {
     "tagline": "A growing suite of focused browser extensions that make everyday work lighter.",
