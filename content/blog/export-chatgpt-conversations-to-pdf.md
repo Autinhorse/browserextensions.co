@@ -18,7 +18,7 @@ Every modern browser can "print" a page to a PDF file.
 3. In the print dialog, change the destination to **Save as PDF**.
 4. Click **Save** and choose where to put the file.
 
-This needs no extra tools, but it has real downsides. The export usually includes the sidebar and other interface chrome, long answers get split awkwardly across page breaks, and code blocks often lose their formatting. It is fine for a one-off, less so if you save chats regularly.
+This needs no extra tools, but it has real downsides. Because the browser prints what's on screen, a long chat often comes out incomplete — chat apps only render the part scrolled into view — and the page can pick up stray interface controls, drop the speaker labels, and lose code formatting. It is fine for a one-off, less so if you save chats regularly.
 
 ## Method 2: Copy and paste into a document
 

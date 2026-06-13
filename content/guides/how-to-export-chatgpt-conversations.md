@@ -14,7 +14,7 @@ ChatGPT keeps your conversations inside its own app, where they're hard to searc
 
 ## Method 2: Print to PDF
 
-Press `Ctrl/Cmd + P` and choose **Save as PDF**. It works without extra tools, but it usually captures the sidebar, splits long answers awkwardly, and loses code formatting.
+Press `Ctrl/Cmd + P` and choose **Save as PDF**. It works without extra tools, but because it photographs the page, the result has real downsides: ChatGPT only renders the part of a long chat that's scrolled into view, so the print often **silently drops most of the conversation**. It also picks up stray interface controls (like the floating message toolbar), leaves the turns unlabeled, and adds no source link or export time. See the [PDF export guide](/docs/ai-chat-snapper/export-to-pdf) for a side-by-side comparison.
 
 ## Method 3: One-click export with AI Chat Snapper
 

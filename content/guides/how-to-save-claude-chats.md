@@ -14,7 +14,7 @@ Claude conversations are often long, structured, and worth keeping - research, w
 
 ## Method 2: Print to PDF
 
-`Ctrl/Cmd + P` → **Save as PDF** works in a pinch, but it captures the interface, breaks long answers across pages, and loses code formatting.
+`Ctrl/Cmd + P` → **Save as PDF** works in a pinch, but a long chat often prints incomplete (only what's scrolled into view), picks up stray interface controls, and loses code formatting.
 
 ## Method 3: One-click export with AI Chat Snapper
 
