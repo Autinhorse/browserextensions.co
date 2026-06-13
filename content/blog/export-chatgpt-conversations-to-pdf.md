@@ -61,4 +61,4 @@ Yes - the same extension also saves to Word, PNG, Markdown, TXT, and JSON.
 
 ---
 
-Prefer to keep your chats as editable, searchable notes instead of static files? See [How to save AI chats to Obsidian](/blog/save-ai-chats-to-obsidian).
+Prefer to keep your chats as editable, searchable notes instead of static files? See [How to save AI chats to Obsidian](/blog/save-ai-chats-to-obsidian). For the bigger picture - every method and format - see the [complete guide to saving and exporting your AI chat history](/blog/save-ai-chat-history).

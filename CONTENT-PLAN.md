@@ -37,7 +37,7 @@ formats × destinations).
 
 | Status | Title | Primary keyword | Slug | Notes |
 |---|---|---|---|---|
-| ☐ Todo | How to Save and Export Your AI Chat History (Complete Guide) | save ai chat history | `save-ai-chat-history` | Master pillar, links to all |
+| 📝 Draft | How to Save and Export Your AI Chat History (Complete Guide) | save ai chat history | `save-ai-chat-history` | Master pillar, links to all. Draft written — needs screenshots + fact check before publish |
 | ☐ Todo | How to Export AI Conversations to PDF (Any Assistant) | export ai chat to pdf | `export-ai-chats-to-pdf` | Format pillar |
 | ☐ Todo | How to Save AI Chats as Markdown | ai chat to markdown | `save-ai-chats-as-markdown` | Format pillar |
 | ☐ Todo | How to Send AI Conversations to Notion | ai chat to notion | `export-ai-chats-to-notion` | Destination pillar, high intent |

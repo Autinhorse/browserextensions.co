@@ -2,7 +2,6 @@ import Image from 'next/image';
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {products} from '@/lib/products';
-import {HashLink} from '@/components/hash-link';
 
 export async function SiteFooter() {
   const t = await getTranslations('Footer');
@@ -45,13 +44,19 @@ export async function SiteFooter() {
           <h3 className="text-sm font-semibold">{t('company')}</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted">
             <li>
-              <HashLink
-                href="/#waitlist"
-                hash="waitlist"
-                className="transition hover:text-foreground"
-              >
+              <Link href="/about" className="transition hover:text-foreground">
                 {t('about')}
-              </HashLink>
+              </Link>
+            </li>
+            <li>
+              <Link href="/docs" className="transition hover:text-foreground">
+                {t('docs')}
+              </Link>
+            </li>
+            <li>
+              <Link href="/guides" className="transition hover:text-foreground">
+                {t('guides')}
+              </Link>
             </li>
             <li>
               <Link href="/blog" className="transition hover:text-foreground">

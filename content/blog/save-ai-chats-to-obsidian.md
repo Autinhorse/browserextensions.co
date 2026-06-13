@@ -55,4 +55,4 @@ Yes - the same extension also exports to PDF, Word, PNG, TXT, and JSON, and can 
 
 ---
 
-Need a static file to share instead of a vault note? See [How to export ChatGPT conversations to PDF](/blog/export-chatgpt-conversations-to-pdf).
+Need a static file to share instead of a vault note? See [How to export ChatGPT conversations to PDF](/blog/export-chatgpt-conversations-to-pdf). For every method and format in one place, see the [complete guide to saving and exporting your AI chat history](/blog/save-ai-chat-history).

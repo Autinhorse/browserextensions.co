@@ -6,6 +6,8 @@
   "Nav": {
     "products": "Products",
     "features": "Features",
+    "docs": "Docs",
+    "guides": "Guides",
     "blog": "Blog",
     "feedback": "Feedback"
   },
@@ -282,6 +284,8 @@
     "company": "Company",
     "legal": "Legal",
     "about": "About",
+    "docs": "Docs",
+    "guides": "Guides",
     "blog": "Blog",
     "contact": "Contact",
     "privacy": "Privacy",
@@ -349,6 +353,45 @@
         "body": "If you have questions about these terms, contact us at support@browserextensions.co."
       }
     }
+  },
+  "About": {
+    "title": "About browserextensions.co",
+    "subtitle": "A small studio building focused browser extensions that do one thing well - and keep your data on your device.",
+    "sections": {
+      "mission": {
+        "title": "What we're about",
+        "body": "browserextensions.co builds a growing suite of browser extensions for everyday work: capturing pages, exporting AI conversations, and making sense of reviews. Each one is designed to be fast, focused, and free of the bloat that makes most extensions a chore. We'd rather ship a few tools people genuinely rely on than a long list nobody trusts."
+      },
+      "products": {
+        "title": "What we build",
+        "body": "Our current tools are Web Snapper for capturing and saving web pages, AI Chat Snapper for exporting conversations from ChatGPT, Claude, Gemini, and seven other AI assistants, and Review Snapper for summarizing product reviews. They share a common philosophy: a clear job, a clean interface, and no surprises."
+      },
+      "privacy": {
+        "title": "Privacy by default",
+        "body": "We build local-first. Wherever it's possible, our extensions do their work directly on your device, without accounts and without uploading your content to a server. AI Chat Snapper, for example, generates exports entirely in your browser and can run fully offline. Your data is yours - we'd rather not handle it at all."
+      },
+      "contact": {
+        "title": "Get in touch",
+        "body": "We read everything. Share feedback, request a feature, or report a bug through our feedback page, or email us directly at support@browserextensions.co."
+      }
+    }
+  },
+  "Guides": {
+    "title": "Guides",
+    "subtitle": "Step-by-step how-to guides for saving and exporting your AI conversations.",
+    "metaTitle": "Guides",
+    "metaDescription": "Step-by-step guides to export and back up your AI chats - ChatGPT, Claude, Gemini, and more - from browserextensions.co.",
+    "readingTime": "{minutes} min read",
+    "updated": "Updated {date}",
+    "backToGuides": "Back to all guides",
+    "empty": "No guides yet. Check back soon."
+  },
+  "Docs": {
+    "title": "Documentation",
+    "subtitle": "Reference docs for our browser extensions - setup, features, and answers.",
+    "metaTitle": "Documentation",
+    "metaDescription": "Product documentation for browserextensions.co extensions - getting started, supported platforms, export formats, storage, and FAQ.",
+    "empty": "Documentation is on the way."
   },
   "NotFound": {
     "title": "Page not found",
