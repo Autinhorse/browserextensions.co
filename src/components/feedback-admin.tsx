@@ -2,6 +2,7 @@
 
 import {useState} from 'react';
 import {ExternalLink, Lock, RefreshCw} from 'lucide-react';
+import {Link} from '@/i18n/navigation';
 
 type Attachment = {
   id: string;
@@ -90,9 +91,12 @@ export function FeedbackAdmin() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-brand">
-            Admin
-          </p>
+          <div className="flex items-center gap-3 text-sm font-medium uppercase tracking-[0.2em]">
+            <span className="text-brand">Admin</span>
+            <Link href="/admin/waitlist" className="text-muted normal-case tracking-normal hover:text-foreground">
+              Waitlist
+            </Link>
+          </div>
           <h1 className="mt-3 text-3xl font-bold tracking-tight">Feedback Inbox</h1>
         </div>
         <button
