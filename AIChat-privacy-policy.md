@@ -5,7 +5,7 @@
 
 This Privacy Policy explains how the **AI Chat Snapper** browser extension ("the Extension", "we", "us") handles information. AI Chat Snapper lets you export your AI chat conversations (from ChatGPT, Claude, Gemini, DeepSeek, Grok, Perplexity, Doubao, Kimi, Mistral, and Qwen) to PDF, Word (.docx), Markdown, plain text, JSON, and image formats, and — only when you choose to — send them to your own Notion workspace or local Obsidian vault.
 
-> Product page: https://browserextensions.co/aichatsnapper
+> Product page: https://browserextensions.co/products/ai-chat-snapper
 > Contact: support@browserextensions.co
 
 ---
