@@ -137,8 +137,11 @@ export default async function AIChatSnapperPrivacyPage({
   const {locale} = await params;
   setRequestLocale(locale);
 
+  // Temporary review version with Google Docs/Drive removed (pending Chrome
+  // Web Store OAuth verification). To restore the full policy after approval,
+  // switch this back to 'AIChatSnapper-privacy-policy.md'.
   const markdown = await readFile(
-    path.join(process.cwd(), 'AIChatSnapper-privacy-policy.md'),
+    path.join(process.cwd(), 'AIChat-privacy-policy.md'),
     'utf8',
   );
 
