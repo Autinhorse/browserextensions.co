@@ -1,15 +1,17 @@
 import type {MetadataRoute} from 'next';
 import {products} from '@/lib/products';
-import {getAllPostSlugs} from '@/lib/blog';
-import {getAllGuideSlugs} from '@/lib/guides';
+import {getAllPosts} from '@/lib/blog';
+import {getAllGuides} from '@/lib/guides';
 import {getDocProducts, getDocSlugs} from '@/lib/docs';
 
 const SITE_URL = 'https://browserextensions.co';
 
+type Entry = {path: string; lastModified: Date};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticPaths = [
+  const staticPaths: Entry[] = [
     '',
     '/about',
     '/feedback',
@@ -19,12 +21,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/privacy/ai-chat-snapper',
     '/terms',
-  ];
-  const productPaths = products.map((product) => `/products/${product.slug}`);
-  const blogPaths = getAllPostSlugs().map((slug) => `/blog/${slug}`);
-  const guidePaths = getAllGuideSlugs().map((slug) => `/guides/${slug}`);
-  const docPaths = getDocProducts().flatMap((product) =>
-    getDocSlugs(product).map((slug) => `/docs/${product}/${slug}`),
+  ].map((path) => ({path, lastModified: now}));
+
+  const productPaths: Entry[] = products.map((product) => ({
+    path: `/products/${product.slug}`,
+    lastModified: now,
+  }));
+
+  // Blog posts and guides carry real dates in frontmatter; use them so the
+  // sitemap reports honest last-modified times instead of the build time.
+  const blogPaths: Entry[] = getAllPosts().map((post) => ({
+    path: `/blog/${post.slug}`,
+    lastModified: post.date ? new Date(post.date) : now,
+  }));
+
+  const guidePaths: Entry[] = getAllGuides().map((guide) => ({
+    path: `/guides/${guide.slug}`,
+    lastModified: guide.updated ? new Date(guide.updated) : now,
+  }));
+
+  const docPaths: Entry[] = getDocProducts().flatMap((product) =>
+    getDocSlugs(product).map((slug) => ({
+      path: `/docs/${product}/${slug}`,
+      lastModified: now,
+    })),
   );
 
   return [
@@ -33,10 +53,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogPaths,
     ...guidePaths,
     ...docPaths,
-  ].map((p) => ({
-    url: `${SITE_URL}${p}`,
-    lastModified: now,
+  ].map(({path, lastModified}) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified,
     changeFrequency: 'weekly',
-    priority: p === '' ? 1 : 0.7,
+    priority: path === '' ? 1 : 0.7,
   }));
 }

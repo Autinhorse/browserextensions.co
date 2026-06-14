@@ -4,7 +4,7 @@ const SITE_URL = 'https://browserextensions.co';
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {userAgent: '*', allow: '/'},
+    rules: {userAgent: '*', allow: '/', disallow: ['/admin', '/api']},
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
   };
