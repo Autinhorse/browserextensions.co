@@ -6,9 +6,21 @@ group: "Settings"
 order: 30
 ---
 
+<div style="display:flex;flex-wrap:wrap;gap:1.5rem;margin:1.75rem 0">
+<figure style="flex:1 1 280px;margin:0">
+<img src="/AIChatSnapper/Setting01.png" alt="Setting page of AI Chat Snapper" style="width:100%" />
+<figcaption>Setting page of AI Chat Snapper.</figcaption>
+</figure>
+<figure style="flex:1 1 280px;margin:0">
+<img src="/AIChatSnapper/Setting02.png" alt="Setting page of AI Chat Snapper" style="width:100%" />
+<figcaption>Setting page of AI Chat Snapper.</figcaption>
+</figure>
+</div>
+
 The settings page lets you tailor how AI Chat Snapper names, formats, and delivers your exports. Open it from the extension's options (right‑click the AI Chat Snapper icon → **Options**, or use the gear/settings link in the popup). The page header reads **AI Chat Snapper · Settings**.
 
 Changes are saved automatically as you make them; a brief **Saved** confirmation appears. To revert everything, use **Reset to defaults** at the bottom of the page.
+
 
 ## Language
 

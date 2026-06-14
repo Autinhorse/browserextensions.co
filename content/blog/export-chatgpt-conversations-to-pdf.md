@@ -18,7 +18,7 @@ Every modern browser can "print" a page to a PDF file.
 3. In the print dialog, change the destination to **Save as PDF**.
 4. Click **Save** and choose where to put the file.
 
-This needs no extra tools, but it has real downsides. Because the browser prints what's on screen, a long chat often comes out incomplete — chat apps only render the part scrolled into view — and the page can pick up stray interface controls, drop the speaker labels, and lose code formatting. It is fine for a one-off, less so if you save chats regularly.
+For a short conversation this works well and needs no extra tools. On longer chats, though, it has real downsides: because the browser prints what's on screen, the result can come out incomplete — chat apps only render the part scrolled into view — and the page may pick up stray interface controls, drop the speaker labels, or lose code formatting. It is fine for a one-off, less so if you save chats regularly.
 
 ## Method 2: Copy and paste into a document
 
@@ -41,7 +41,7 @@ It is also **100% offline**: exports are generated on your device, with no accou
 
 | Method | Speed | Keeps formatting | Best for |
 | --- | --- | --- | --- |
-| Print to PDF | Fast | Partial | A rare one-off save |
+| Print to PDF | Fast | Partial on long chats | A quick single-page save |
 | Copy and paste | Slow | Poor | When you want to edit heavily first |
 | AI Chat Snapper | One click | Full | Saving chats regularly |
 
@@ -49,7 +49,7 @@ It is also **100% offline**: exports are generated on your device, with no accou
 
 ### Does exporting keep code blocks and formatting?
 
-With the browser print method, code blocks often lose their styling. A purpose-built exporter like AI Chat Snapper preserves headings, lists, and code formatting in the PDF.
+With the browser print method, code blocks can sometimes lose their styling. A purpose-built exporter like AI Chat Snapper reliably preserves headings, lists, and code formatting in the PDF.
 
 ### Is my conversation uploaded anywhere?
 

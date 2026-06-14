@@ -14,7 +14,7 @@ Google Gemini conversations can hold useful research and drafts you'll want outs
 
 ## Method 2: Print to PDF
 
-`Ctrl/Cmd + P` → **Save as PDF**. Quick, but a long chat often prints incomplete (only what's scrolled into view), picks up stray interface controls, and loses code formatting.
+`Ctrl/Cmd + P` → **Save as PDF**. Works well for a short chat that fits on screen. With very long conversations it occasionally misses the parts scrolled out of view, or catches a stray interface control.
 
 ## Method 3: One-click export with AI Chat Snapper
 

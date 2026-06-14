@@ -78,58 +78,83 @@
     },
     "web-snapper": {
       "name": "Web Snapper",
-      "tagline": "Save any web page, all of it, or just the parts you choose.",
-      "seoTitle": "Web Snapper - Capture, annotate, and save web pages",
-      "seoDescription": "Capture full web pages or selected sections, annotate what matters, and save clean local exports from your browser.",
-      "description": "Capture full pages or selected regions and save them to local files. Highlight, annotate, and take notes right on the page, then keep everything organized.",
+      "tagline": "Turn any web page into a searchable, annotatable, archivable asset.",
+      "seoTitle": "Web Snapper - Full-page screenshots, searchable PDF & web archiving",
+      "seoDescription": "Capture full web pages or regions, export searchable PDFs and single-file HTML, redact and annotate, extract Markdown, and archive everything to a private local history - all on your device.",
+      "description": "A privacy-first capture workbench for the web. Take full-page or region screenshots and export them as searchable PDF, PNG, single-file HTML, or clean Markdown; extract just the core article; redact and annotate the page in one editor; and archive every capture to a searchable local history - all in a local sandbox.",
       "highlights": [
         {
-          "title": "Full or partial capture",
-          "desc": "Grab an entire page or select exactly the content you want to keep."
+          "title": "Searchable PDF export",
+          "desc": "Exported PDFs carry an invisible text layer: copy text, run a full-text search, and click the original links - in any language, with almost no extra file size."
         },
         {
-          "title": "Highlight & annotate",
-          "desc": "Mark up pages with highlights, notes, and annotations as you read."
+          "title": "Full-page & region capture",
+          "desc": "Smart scroll-stitching captures long pages and fixes sticky-header ghosting, or drag-select any region you want."
         },
         {
-          "title": "Save locally",
-          "desc": "Export to local files so your captures are always yours."
+          "title": "Lossless single-file HTML",
+          "desc": "Save a whole page as one HTML file with images, styles, and fonts inlined. It opens offline, with scripts and trackers stripped."
+        },
+        {
+          "title": "Edit the page, then save",
+          "desc": "A built-in page editor: black out, mosaic, or truly delete any element or text - nothing sensitive is left - then add highlights, notes, and tags before you export the cleaned-up page."
+        },
+        {
+          "title": "Reader mode & Markdown",
+          "desc": "Extract just the core article - automatically dropping sidebars, headers, footers, and ads - then export clean, semantic Markdown for Obsidian, Typora, or VS Code."
+        },
+        {
+          "title": "Searchable local archive",
+          "desc": "Every capture is auto-saved to a local history with thumbnails, full-text search, and SHA-256 hashes - zero cloud, instant response."
         }
       ],
-      "platforms": ["Web pages", "Articles", "Docs", "Dashboards"],
-      "formats": ["PNG", "PDF", "HTML", "Markdown", "Local files"],
-      "privacyPoints": ["Runs only when you choose to capture", "Local-first exports", "No ads or content tracking"],
-      "steps": ["Open the page you want to keep", "Capture the whole page or choose a section", "Annotate, export, and save it locally"],
-      "useCases": ["Research archives", "Design references", "Documentation snippets", "Bug reports", "Receipts and records"],
+      "platforms": ["Any web page", "Articles", "Research papers", "Dashboards", "Documentation", "Receipts"],
+      "formats": ["Searchable PDF", "Full-page PNG", "Single-file HTML", "Markdown", "Local files"],
+      "privacyPoints": ["Capture, packaging, screenshots, and redaction all run in a local sandbox", "Redaction truly removes content - no sensitive data remains in the exported file", "Built on Chrome Manifest V3 with minimal, activeTab-based permissions", "Non-AI features never go online; history and annotations stay on your device"],
+      "steps": ["Open any page and capture the full page or a selected region", "Redact anything sensitive, then highlight and annotate what matters", "Export to searchable PDF, HTML, or Markdown - auto-archived to local history"],
+      "useCases": ["Legal records & evidence", "Research archives", "Competitive analysis", "Design references", "Documentation snippets", "Bug reports", "Receipts & records"],
       "deepDive": [
         {
-          "title": "Capture exactly what matters",
-          "desc": "Save full pages for complete context or select a focused region when you only need one section.",
-          "visual": "Full page / Selection"
+          "title": "Professional capture",
+          "desc": "Smart scrolling stitches long pages - handling sticky headers and sidebars - or drag-select a region. Export to PNG, searchable PDF, or Markdown on fit-to-content, A4, or Letter.",
+          "visual": "Full page / Region"
         },
         {
-          "title": "Add context before you save",
-          "desc": "Highlight important details, add notes, and keep the reason you saved a page attached to the capture.",
-          "visual": "Highlight / Note"
+          "title": "Lossless HTML archive",
+          "desc": "Save a whole page as a single HTML file with images, styles, and fonts inlined. It opens offline as a clean, static snapshot with scripts and trackers removed.",
+          "visual": "1 HTML file"
         },
         {
-          "title": "Keep portable records",
-          "desc": "Export captures into files you control, so useful web content stays available after the tab is gone.",
-          "visual": "Export / Local"
+          "title": "Edit the page, then save",
+          "desc": "Edit the page before you save: black out, mosaic, or delete any element or text - truly removed, with nothing left in the export - then add highlights, notes, and tags. Highlights even export as real, editable PDF annotations, and everything restores on revisit.",
+          "visual": "Edit / Redact / Annotate"
+        },
+        {
+          "title": "Reader mode & Markdown",
+          "desc": "Extract just the core article, automatically dropping sidebars, headers, footers, and ads. Export clean, semantic Markdown - real text, original image references, and true-color highlights - for Obsidian, Typora, or VS Code.",
+          "visual": "Reader / Markdown"
         }
       ],
       "faq": [
         {
-          "question": "Can Web Snapper capture a full page?",
-          "answer": "Yes. It is designed for full-page capture as well as selected sections."
+          "question": "Are the exported PDFs searchable?",
+          "answer": "Yes. PDF exports include an invisible text layer, so you can select and copy text, run a full-text search, and click the original links - in any language, with almost no increase in file size."
         },
         {
-          "question": "Does Web Snapper upload captured pages?",
-          "answer": "No. The product is designed around local-first exports."
+          "question": "Does redaction really remove the content?",
+          "answer": "Yes. Redaction deletes the underlying element or text rather than just covering it, so no sensitive information remains in the exported file."
         },
         {
-          "question": "Can I annotate captures?",
-          "answer": "Yes. The workflow includes highlights, notes, and annotations."
+          "question": "Can I open a saved page offline?",
+          "answer": "Yes. The single-file HTML packs images, styles, and fonts inline and strips scripts and trackers, so it opens anywhere as a clean, static snapshot."
+        },
+        {
+          "question": "Does Web Snapper upload my pages?",
+          "answer": "No. Capture, packaging, and redaction run in a local sandbox, and your history and annotations are stored on your device. Non-AI features never touch the network."
+        },
+        {
+          "question": "Where do my captures go?",
+          "answer": "Every capture is archived to a searchable local history with thumbnails and SHA-256 hashes. You can reopen the original page, locate the file, or delete it - all local, no cloud."
         }
       ]
     },
