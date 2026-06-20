@@ -1,12 +1,34 @@
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 import type {Metadata} from 'next';
-import {setRequestLocale} from 'next-intl/server';
+import {notFound} from 'next/navigation';
+import {getTranslations, setRequestLocale} from 'next-intl/server';
+import {routing} from '@/i18n/routing';
+import {getProduct} from '@/lib/products';
+import {privacyDocs} from '@/lib/privacy';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy - AI Chat Snapper',
-  description: 'Privacy policy for the AI Chat Snapper browser extension.',
-};
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    Object.keys(privacyDocs).map((product) => ({locale, product})),
+  );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{locale: string; product: string}>;
+}): Promise<Metadata> {
+  const {locale, product} = await params;
+  if (!privacyDocs[product] || !getProduct(product)) return {};
+
+  const t = await getTranslations({locale, namespace: 'Products'});
+  const name = t(`${product}.name`);
+
+  return {
+    title: `Privacy Policy - ${name}`,
+    description: `Privacy policy for the ${name} browser extension.`,
+  };
+}
 
 function renderInline(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g);
@@ -129,20 +151,33 @@ function renderMarkdown(markdown: string) {
   return nodes;
 }
 
-export default async function AIChatSnapperPrivacyPage({
+/**
+ * Keep only the English portion. Bilingual source files (e.g. Web Snapper) put
+ * a translated copy after the English one under a heading like
+ * "# Web Snapper — 隐私政策（中文）"; cut from the first heading that contains
+ * CJK characters onward, then trim a trailing divider.
+ */
+function englishOnly(markdown: string) {
+  const cut = markdown.search(/\n#{1,3}\s+[^\n]*[㐀-鿿]/);
+  const english = cut === -1 ? markdown : markdown.slice(0, cut);
+  return english.replace(/\n+---\s*$/, '').trimEnd();
+}
+
+export default async function ProductPrivacyPage({
   params,
 }: {
-  params: Promise<{locale: string}>;
+  params: Promise<{locale: string; product: string}>;
 }) {
-  const {locale} = await params;
+  const {locale, product} = await params;
   setRequestLocale(locale);
 
-  // Temporary review version with Google Docs/Drive removed (pending Chrome
-  // Web Store OAuth verification). To restore the full policy after approval,
-  // switch this back to 'AIChatSnapper-privacy-policy.md'.
-  const markdown = await readFile(
-    path.join(process.cwd(), 'AIChat-privacy-policy.md'),
-    'utf8',
+  const file = privacyDocs[product];
+  if (!file) {
+    notFound();
+  }
+
+  const markdown = englishOnly(
+    await readFile(path.join(process.cwd(), file), 'utf8'),
   );
 
   return (

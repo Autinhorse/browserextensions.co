@@ -1,0 +1,427 @@
+{
+  "Site": {
+    "name": "Browser Extensions",
+    "tagline": "一套不断成长、专注实用的浏览器扩展，让日常工作更轻松——捕获网页、导出 AI 对话、总结评论，还有更多功能。"
+  },
+  "Nav": {
+    "products": "产品",
+    "features": "功能",
+    "docs": "文档",
+    "guides": "指南",
+    "blog": "博客",
+    "feedback": "反馈"
+  },
+  "Home": {
+    "hero": {
+      "badge": "已有 3 款扩展，仍在增长",
+      "title": "让日常工作更轻松的浏览器扩展。",
+      "subtitle": "<brand>browserextensions.co</brand> 是一套不断成长、专注实用的浏览器工具——抓取网页、导出你的 AI 对话、总结产品评论，更多功能也在路上。每一款都悄悄消除你一天中的摩擦，默认将数据保留在你的设备上，并同步到你已经在用的应用中。",
+      "ctaPrimary": "探索扩展",
+      "ctaSecondary": "加入候补名单"
+    },
+    "products": {
+      "title": "我们的扩展",
+      "subtitle": "每一款只做一件事，并把它做好。"
+    },
+    "features": {
+      "title": "以正确的方式打造",
+      "local": {
+        "title": "本地优先",
+        "desc": "你的数据默认保存在你的设备上。掌控权始终在你手中。"
+      },
+      "formats": {
+        "title": "随处导出",
+        "desc": "Word、PDF、HTML、Markdown、JSON、Notion、Google Docs 等等。"
+      },
+      "privacy": {
+        "title": "隐私至上的设计",
+        "desc": "我们从不追踪你的内容，只收集你主动选择分享的信息。"
+      },
+      "fast": {
+        "title": "快速且轻量",
+        "desc": "专为不打扰你而生，绝不拖慢你的浏览器。"
+      }
+    },
+    "waitlist": {
+      "title": "第一时间知晓",
+      "subtitle": "新扩展、Pro 功能和重大更新发布时，第一时间通知你。",
+      "placeholder": "you@example.com",
+      "button": "通知我",
+      "success": "你已加入名单，谢谢！",
+      "error": "出了点问题，请重试。",
+      "invalid": "请输入有效的电子邮箱地址。"
+    }
+  },
+  "Products": {
+    "status": {
+      "available": "已上线",
+      "beta": "测试中",
+      "coming-soon": "即将推出"
+    },
+    "learnMore": "了解更多",
+    "getExtension": "添加到 Chrome",
+    "joinWaitlist": "加入候补名单",
+    "featuresTitle": "它能做什么",
+    "page": {
+      "highlightsTitle": "亮点",
+      "deepDiveTitle": "功能详解",
+      "platformsTitle": "支持的平台",
+      "formatsTitle": "导出格式",
+      "destinationsTitle": "保存到",
+      "privacyTitle": "隐私与权限",
+      "privacyLink": "阅读隐私政策",
+      "howTitle": "工作原理",
+      "useCasesTitle": "使用场景",
+      "faqTitle": "常见问题",
+      "finalCtaTitle": "准备好试试了吗？",
+      "installSubtitle": "将 AI Chat Snapper 添加到 Chrome——免费，无需账户。",
+      "visualLabel": "工作流预览"
+    },
+    "web-snapper": {
+      "name": "Web Snapper",
+      "tagline": "把任意网页变成可搜索、可批注、可归档的资产。",
+      "seoTitle": "Web Snapper - 整页截图、可搜索 PDF 与网页归档",
+      "seoDescription": "捕获整页或局部网页，导出可搜索的 PDF 和单文件 HTML，遮盖与批注，提取 Markdown，并将一切归档到私密的本地历史记录——全部在你的设备上完成。",
+      "description": "一个隐私优先的网页捕获工作台。拍摄整页或局部截图，并导出为可搜索的 PDF、PNG、单文件 HTML 或干净的 Markdown；只提取核心正文；在同一个编辑器中遮盖并批注页面；并将每次捕获归档到可搜索的本地历史记录——全部在本地沙盒中完成。",
+      "highlights": [
+        {
+          "title": "可搜索的 PDF 导出",
+          "desc": "导出的 PDF 带有不可见的文字层：可复制文本、进行全文搜索、点击原始链接——支持任意语言，几乎不增加文件体积。"
+        },
+        {
+          "title": "整页与局部捕获",
+          "desc": "智能滚动拼接可捕获超长页面并修复吸顶页眉的重影，或者拖动框选你想要的任意区域。"
+        },
+        {
+          "title": "无损单文件 HTML",
+          "desc": "将整个页面保存为一个 HTML 文件，图片、样式和字体全部内嵌。离线即可打开，脚本和追踪器已被剔除。"
+        },
+        {
+          "title": "先编辑页面，再保存",
+          "desc": "内置页面编辑器：涂黑、打码或真正删除任意元素或文字——不留下任何敏感内容——再添加高亮、批注和标签，然后导出整理好的页面。"
+        },
+        {
+          "title": "阅读模式与 Markdown",
+          "desc": "只提取核心正文——自动去掉侧边栏、页眉、页脚和广告——再导出干净、语义化的 Markdown，供 Obsidian、Typora 或 VS Code 使用。"
+        },
+        {
+          "title": "可搜索的本地归档",
+          "desc": "每次捕获都会自动保存到本地历史记录，带缩略图、全文搜索和 SHA-256 哈希——零云端，响应即时。"
+        }
+      ],
+      "platforms": ["任意网页", "文章", "研究论文", "数据看板", "技术文档", "收据"],
+      "formats": ["可搜索 PDF", "整页 PNG", "单文件 HTML", "Markdown", "本地文件"],
+      "privacyPoints": ["捕获、打包、截图和遮盖全部在本地沙盒中运行", "遮盖会真正移除内容——导出文件中不留任何敏感数据", "基于 Chrome Manifest V3 构建，仅使用最小化的 activeTab 权限", "非 AI 功能从不联网；历史记录和批注始终留在你的设备上"],
+      "steps": ["打开任意页面，捕获整页或选定区域", "遮盖任何敏感内容，再高亮并批注重点", "导出为可搜索的 PDF、HTML 或 Markdown——并自动归档到本地历史记录"],
+      "useCases": ["法律记录与证据", "研究归档", "竞品分析", "设计参考", "文档片段", "缺陷报告", "收据与凭证"],
+      "deepDive": [
+        {
+          "title": "专业级捕获",
+          "desc": "智能滚动可拼接超长页面——妥善处理吸顶页眉和侧边栏——或拖动框选某个区域。可按适应内容、A4 或 Letter 尺寸导出为 PNG、可搜索 PDF 或 Markdown。",
+          "visual": "整页 / 局部"
+        },
+        {
+          "title": "无损 HTML 归档",
+          "desc": "将整个页面保存为单个 HTML 文件，图片、样式和字体全部内嵌。离线即可打开，是一份干净的静态快照，脚本和追踪器已被移除。",
+          "visual": "1 个 HTML 文件"
+        },
+        {
+          "title": "先编辑页面，再保存",
+          "desc": "保存前先编辑页面：涂黑、打码或删除任意元素或文字——真正移除，导出中不留痕迹——再添加高亮、批注和标签。高亮甚至会导出为真正可编辑的 PDF 批注，重新访问时一切都会还原。",
+          "visual": "编辑 / 遮盖 / 批注"
+        },
+        {
+          "title": "阅读模式与 Markdown",
+          "desc": "只提取核心正文，自动去掉侧边栏、页眉、页脚和广告。导出干净、语义化的 Markdown——真实文字、原始图片引用和真彩高亮——供 Obsidian、Typora 或 VS Code 使用。",
+          "visual": "阅读 / Markdown"
+        }
+      ],
+      "faq": [
+        {
+          "question": "导出的 PDF 可以搜索吗？",
+          "answer": "可以。PDF 导出包含一个不可见的文字层，因此你可以选中并复制文本、进行全文搜索、点击原始链接——支持任意语言，几乎不增加文件体积。"
+        },
+        {
+          "question": "遮盖真的会移除内容吗？",
+          "answer": "是的。遮盖会删除底层元素或文字，而不只是把它盖住，因此导出文件中不会留下任何敏感信息。"
+        },
+        {
+          "question": "保存的页面可以离线打开吗？",
+          "answer": "可以。单文件 HTML 内嵌了图片、样式和字体，并剔除了脚本和追踪器，因此可在任何地方作为干净的静态快照打开。"
+        },
+        {
+          "question": "Web Snapper 会上传我的页面吗？",
+          "answer": "不会。捕获、打包和遮盖都在本地沙盒中运行，你的历史记录和批注都存储在你的设备上。非 AI 功能从不接触网络。"
+        },
+        {
+          "question": "我的捕获会保存到哪里？",
+          "answer": "每次捕获都会归档到可搜索的本地历史记录，带缩略图和 SHA-256 哈希。你可以重新打开原始页面、定位文件或删除它——全部本地完成，没有云端。"
+        }
+      ]
+    },
+    "ai-chat-snapper": {
+      "name": "AI Chat Snapper",
+      "tagline": "把你的 AI 对话变成你真正拥有的文档。",
+      "seoTitle": "AI Chat Snapper - 导出 ChatGPT、Claude、Gemini 等 10 款 AI 对话",
+      "seoDescription": "将 10 款 AI 助手的对话——ChatGPT、Claude、Gemini、Grok、DeepSeek 等——导出为 PDF、Word、PNG、Markdown、TXT 或 JSON。100% 离线保存，或发送到 Notion、Google Docs 和 Obsidian。",
+      "description": "将 10 款 AI 助手的对话——ChatGPT、Claude、Gemini、Grok、Mistral、DeepSeek、Qwen、Kimi、Doubao 和 Perplexity——保存为 PDF、Word、PNG、Markdown、TXT 或 JSON。一切 100% 离线保存在你的设备上，或发送到 Notion、Google Docs 或 Obsidian。提供 10 种语言。",
+      "highlights": [
+        {
+          "title": "支持 10 款 AI 助手",
+          "desc": "可从 ChatGPT、Claude、Gemini、Grok、Mistral、DeepSeek、Qwen、Kimi、Doubao 和 Perplexity 导出。"
+        },
+        {
+          "title": "六种导出格式",
+          "desc": "可保存为 PDF、Word、PNG 图片、Markdown、TXT 或 JSON。"
+        },
+        {
+          "title": "保存到你工作的地方",
+          "desc": "保留为本地文件，或发送到 Notion、Google Docs 或你的 Obsidian 仓库。"
+        },
+        {
+          "title": "100% 离线选项",
+          "desc": "本地导出绝不离开你的设备——无需账户、无需上传，完全私密。"
+        },
+        {
+          "title": "提供 10 种语言",
+          "desc": "用你的母语使用这款扩展，内置 10 种界面语言。"
+        },
+        {
+          "title": "保留你的历史",
+          "desc": "再也不会丢失任何重要的 AI 对话。"
+        }
+      ],
+      "platforms": ["ChatGPT", "Claude", "Gemini", "Grok", "Mistral", "DeepSeek", "Qwen", "Kimi", "Doubao", "Perplexity"],
+      "formats": ["PDF", "Word", "PNG", "Markdown", "TXT", "JSON"],
+      "destinations": ["本地文件", "Notion", "Google Docs", "Obsidian"],
+      "privacyPoints": ["本地导出 100% 留在你的设备上", "完全离线运行——无需账户或登录", "无分析、无广告、无追踪", "可选的 Notion、Google Docs 和 Obsidian 导出仅在你选择时才运行"],
+      "steps": ["在任意支持的 AI 助手中打开一段对话", "选择一种格式——PDF、Word、PNG、Markdown、TXT 或 JSON", "保存到本地，或发送到 Notion、Google Docs 或 Obsidian"],
+      "useCases": ["研究对话", "编程帮助归档", "客户与项目笔记", "提示词库", "可分享的 AI 生成文档"],
+      "deepDive": [
+        {
+          "title": "导出易读的文档",
+          "desc": "把冗长的 AI 对话变成结构化文件，更易于阅读、搜索和分享。",
+          "visual": "对话 -> 文档"
+        },
+        {
+          "title": "选择合适的格式",
+          "desc": "保存为精致的 PDF、可编辑的 Word 文件、PNG 快照、干净的 Markdown、TXT 或 JSON 记录。",
+          "visual": "PDF / DOCX / PNG"
+        },
+        {
+          "title": "保存到你工作的地方",
+          "desc": "将导出保留为本地文件，或发送到 Notion、Google Docs 或你本地的 Obsidian 仓库。",
+          "visual": "Notion / Obsidian"
+        }
+      ],
+      "faq": [
+        {
+          "question": "支持哪些 AI 平台？",
+          "answer": "AI Chat Snapper 支持 10 款 AI 助手：ChatGPT、Claude、Gemini、Grok、Mistral、DeepSeek、Qwen、Kimi、Doubao 和 Perplexity。"
+        },
+        {
+          "question": "它会把我的对话上传到你们的服务器吗？",
+          "answer": "不会。导出在你的设备上本地处理，扩展可以 100% 离线运行。可选的 Notion、Google Docs 和 Obsidian 导出会直接从你的浏览器发送到你选择的目标位置。"
+        },
+        {
+          "question": "我可以使用哪些导出格式和保存目标？",
+          "answer": "你可以导出为 PDF、Word、PNG 图片、Markdown、TXT 和 JSON，并保存到本地文件、Notion、Google Docs 或 Obsidian。"
+        },
+        {
+          "question": "这款扩展支持我的语言吗？",
+          "answer": "AI Chat Snapper 内置 10 种界面语言，因此你可以用你偏好的语言使用它。"
+        },
+        {
+          "question": "我可以在哪里阅读隐私政策？",
+          "answer": "AI Chat Snapper 的隐私政策可在本产品页面和网站隐私页面中查看。"
+        }
+      ]
+    },
+    "review-snapper": {
+      "name": "Review Snapper",
+      "tagline": "一眼看懂购物者的真实想法。",
+      "seoTitle": "Review Snapper - 收集并总结产品评论",
+      "seoDescription": "从购物页面收集产品评论，总结情感倾向，在购买前对比顾客的真实想法。",
+      "description": "从产品页面提取用户评论，再总结并对比情感倾向，让你更快、更有信心地做出购买决定。",
+      "highlights": [
+        {
+          "title": "收集评论",
+          "desc": "从支持的购物网站收集用户评论。"
+        },
+        {
+          "title": "总结与对比",
+          "desc": "查看汇总的情感倾向，并将产品并排对比。"
+        },
+        {
+          "title": "更快决策",
+          "desc": "拨开杂音，自信下单。"
+        }
+      ],
+      "platforms": ["产品页面", "购物网站", "评论区"],
+      "formats": ["摘要", "情感倾向", "对比", "CSV", "Markdown"],
+      "privacyPoints": ["仅在你要求时才读取评论", "专为聚焦的产品调研而设计", "无广告，也不追踪评论内容"],
+      "steps": ["打开一个支持的产品页面", "收集可用的顾客评论", "总结情感倾向并对比关键主题"],
+      "useCases": ["购买决策", "产品调研", "竞品对比", "市场反馈", "评论趋势总结"],
+      "deepDive": [
+        {
+          "title": "收集有用的信号",
+          "desc": "从产品页面收集可见的顾客评论，让你在一个有序的视图中开展工作。",
+          "visual": "评论 / 主题"
+        },
+        {
+          "title": "总结共同规律",
+          "desc": "无需逐条手动阅读，即可看到反复出现的好评、抱怨、取舍和情感倾向。",
+          "visual": "优点 / 缺点"
+        },
+        {
+          "title": "购买前先对比",
+          "desc": "利用评论主题将产品并排对比，更快做出决定。",
+          "visual": "A vs B"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Review Snapper 现在可用了吗？",
+          "answer": "Review Snapper 即将推出。你可以加入候补名单以获取更新。"
+        },
+        {
+          "question": "它会总结哪些内容？",
+          "answer": "它旨在总结顾客评论的主题、情感倾向、优点、缺点和对比要点。"
+        },
+        {
+          "question": "它能对比产品吗？",
+          "answer": "产品对比是计划中工作流的一部分。"
+        }
+      ]
+    }
+  },
+  "Blog": {
+    "title": "博客",
+    "subtitle": "指南、教程和更新，助你更充分地用好你的浏览器扩展。",
+    "metaTitle": "博客",
+    "metaDescription": "来自 browserextensions.co 的教程和指南——导出 AI 对话、捕获网页，并在浏览器中更高效地工作。",
+    "readingTime": "阅读约 {minutes} 分钟",
+    "backToBlog": "返回所有文章",
+    "empty": "暂无文章，敬请期待。"
+  },
+  "Footer": {
+    "tagline": "一套不断成长、专注实用的浏览器扩展，让日常工作更轻松。",
+    "product": "产品",
+    "company": "公司",
+    "legal": "法律",
+    "about": "关于",
+    "docs": "文档",
+    "guides": "指南",
+    "blog": "博客",
+    "contact": "联系我们",
+    "privacy": "隐私",
+    "terms": "条款",
+    "rights": "保留所有权利。"
+  },
+  "Privacy": {
+    "title": "隐私",
+    "subtitle": "每款浏览器扩展都有自己的隐私政策，让权限和数据处理保持清晰透明。",
+    "intro": "browserextensions.co 打造本地优先的浏览器扩展。针对各产品的隐私政策会说明每款扩展能访问什么、为何需要这些权限，以及你的数据如何被处理。",
+    "aiChatSnapper": {
+      "title": "AI Chat Snapper",
+      "description": "关于在本地或可选的 Notion 与 Google Docs 目标位置导出 AI 对话的隐私政策。"
+    },
+    "comingSoon": "Web Snapper 和 Review Snapper 的隐私政策将在这些扩展发布前公布。",
+    "contact": "有疑问？请通过 support@browserextensions.co 联系我们。"
+  },
+  "Terms": {
+    "title": "服务条款",
+    "subtitle": "使用 browserextensions.co 及我们的浏览器扩展的条款。",
+    "updated": "最后更新：2026-06-01",
+    "sections": {
+      "acceptance": {
+        "title": "对本条款的接受",
+        "body": "使用 browserextensions.co 或我们发布的任何浏览器扩展，即表示你同意本服务条款。如果你不同意，请勿使用本网站或扩展。"
+      },
+      "products": {
+        "title": "我们的产品",
+        "body": "我们的扩展是用于捕获、导出、保存和理解网页内容的效率工具。随着我们改进产品，功能可能会随时间发生变化。"
+      },
+      "responsibility": {
+        "title": "你的责任",
+        "body": "你需要对使用我们的扩展捕获、导出、上传、存储或分享的内容负责。你必须合法使用本网站和扩展，并尊重你与之配合使用的网站和服务的权利与条款。"
+      },
+      "thirdParties": {
+        "title": "第三方服务",
+        "body": "某些可选功能可能会连接到第三方服务，例如 Notion、Google Drive、Google Docs、Chrome Web Store、支付提供商或其他平台。你对这些服务的使用受其各自的条款和隐私政策约束。"
+      },
+      "availability": {
+        "title": "可用性与变更",
+        "body": "本网站和扩展按现状提供。我们可能随时更新、暂停、移除或更改功能，包括为提升安全性、兼容性或用户体验而进行的调整。"
+      },
+      "paid": {
+        "title": "付费功能",
+        "body": "如果我们推出付费套餐、Pro 功能、订阅或许可证，结账页面或产品页面会在购买前说明定价、续订、取消和退款条款。"
+      },
+      "intellectualProperty": {
+        "title": "知识产权",
+        "body": "browserextensions.co、我们的扩展名称、标识、界面设计、网站内容和产品资料归我们或我们的授权方所有。未经许可，你不得复制、修改、再分发它们，或以暗示获得认可的方式使用它们。"
+      },
+      "disclaimer": {
+        "title": "免责声明",
+        "body": "本网站和扩展按现状提供，不附带任何形式的保证。我们不保证它们将不间断、无差错，或适用于每一种使用场景。"
+      },
+      "liability": {
+        "title": "责任限制",
+        "body": "在法律允许的最大范围内，对于因你使用本网站或扩展而产生的间接、附带、特殊、后果性或惩罚性损害，或数据、利润或业务的损失，我们概不负责。"
+      },
+      "changes": {
+        "title": "本条款的变更",
+        "body": "我们可能会不时更新本条款。届时，我们会更新上方的日期。变更后继续使用本网站或扩展，即表示你接受更新后的条款。"
+      },
+      "contact": {
+        "title": "联系我们",
+        "body": "如果你对本条款有疑问，请通过 support@browserextensions.co 联系我们。"
+      }
+    }
+  },
+  "About": {
+    "title": "关于 browserextensions.co",
+    "subtitle": "一个小型工作室，打造专注的浏览器扩展，把一件事做好——并把你的数据保留在你的设备上。",
+    "sections": {
+      "mission": {
+        "title": "我们的理念",
+        "body": "browserextensions.co 打造一套不断成长的浏览器扩展，服务于日常工作：捕获页面、导出 AI 对话，以及理清评论。每一款都力求快速、专注，并摒弃让大多数扩展沦为负担的臃肿。我们宁愿推出几款人们真正依赖的工具，也不愿堆出一长串无人信任的清单。"
+      },
+      "products": {
+        "title": "我们打造什么",
+        "body": "我们目前的工具包括用于捕获和保存网页的 Web Snapper、用于导出 ChatGPT、Claude、Gemini 及另外七款 AI 助手对话的 AI Chat Snapper，以及用于总结产品评论的 Review Snapper。它们共享同一套理念：清晰的任务、简洁的界面、没有意外。"
+      },
+      "privacy": {
+        "title": "默认保护隐私",
+        "body": "我们以本地优先的方式构建产品。只要可能，我们的扩展就直接在你的设备上完成工作，无需账户，也不会把你的内容上传到服务器。例如，AI Chat Snapper 完全在你的浏览器中生成导出，并可完全离线运行。你的数据属于你——我们宁愿完全不去经手它。"
+      },
+      "contact": {
+        "title": "联系我们",
+        "body": "我们会认真阅读每一条反馈。你可以通过我们的反馈页面分享意见、请求功能或报告缺陷，也可以直接发邮件到 support@browserextensions.co。"
+      }
+    }
+  },
+  "Guides": {
+    "title": "指南",
+    "subtitle": "保存和导出你的 AI 对话的分步操作指南。",
+    "metaTitle": "指南",
+    "metaDescription": "来自 browserextensions.co 的分步指南，教你导出并备份 AI 对话——ChatGPT、Claude、Gemini 等。",
+    "readingTime": "阅读约 {minutes} 分钟",
+    "updated": "更新于 {date}",
+    "backToGuides": "返回所有指南",
+    "empty": "暂无指南，敬请期待。"
+  },
+  "Docs": {
+    "title": "文档",
+    "subtitle": "我们浏览器扩展的参考文档——设置、功能与解答。",
+    "metaTitle": "文档",
+    "metaDescription": "browserextensions.co 扩展的产品文档——快速上手、支持的平台、导出格式、存储与常见问题。",
+    "empty": "文档即将上线。"
+  },
+  "NotFound": {
+    "title": "页面未找到",
+    "description": "你要找的页面不存在或已迁移。",
+    "home": "返回首页"
+  }
+}

@@ -38,7 +38,11 @@ supabase/schema.sql         database schema
 - Add a product: add an entry to `src/lib/products.ts` and a matching block
   under `Products.<slug>` in every `messages/*.json`.
 - All copy goes through next-intl; no hardcoded user-facing strings.
-- Default locale (`en`) is unprefixed (`/`). Add prefixed locales (`/fr`, `/ar`) later.
+- Eight locales are live: `en` (default, unprefixed) plus `/fr`, `/es`, `/ru`,
+  `/zh`, `/ja`, `/ko`, `/ar` (RTL). `messages/en.json` is the source of truth.
+- When you add or change a page, record its translation status in
+  `I18N-STATUS.md` (full / shell-only / English-body). Content (MDX) localization
+  is batched, not done per page.
 - Use the `Link`/navigation helpers from `@/i18n/navigation`, not `next/link`.
 - Pages that `await params` must use `getTranslations` (async), not the
   `useTranslations` hook; call `setRequestLocale(locale)` for static rendering.
@@ -52,5 +56,6 @@ supabase/schema.sql         database schema
 ## Not built yet (roadmap)
 
 Pricing/Pro checkout (Paddle or Lemon Squeezy, merchant of record), user
-accounts + license keys (Supabase Auth), blog/changelog (MDX), full
-translations for the 7 non-English locales.
+accounts + license keys (Supabase Auth), blog/changelog (MDX). UI copy is
+translated for all 8 locales; MDX content localization is still pending — see
+`I18N-STATUS.md`.

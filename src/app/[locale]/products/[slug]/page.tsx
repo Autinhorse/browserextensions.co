@@ -8,12 +8,14 @@ import {
   FileText,
   Lock,
   MousePointer2,
+  Puzzle,
   ShieldCheck,
 } from 'lucide-react';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {HashLink} from '@/components/hash-link';
 import {products, getProduct} from '@/lib/products';
+import {hasPrivacyPolicy} from '@/lib/privacy';
 import {routing} from '@/i18n/routing';
 import {WaitlistForm} from '@/components/waitlist-form';
 
@@ -90,7 +92,8 @@ export default async function ProductPage({
   const deepDive = t.raw(`${slug}.deepDive`) as DeepDive[];
   const faq = t.raw(`${slug}.faq`) as Faq[];
   const privacyHref = `/privacy/${slug}`;
-  const hasPrivacyPage = slug === 'ai-chat-snapper';
+  const hasPrivacyPage = hasPrivacyPolicy(slug);
+  const isLive = product.status !== 'coming-soon' && Boolean(product.chromeUrl);
 
   return (
     <article>
@@ -123,7 +126,7 @@ export default async function ProductPage({
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              {product.status === 'coming-soon' || !product.chromeUrl ? (
+              {!isLive ? (
                 <HashLink
                   href="/#waitlist"
                   hash="waitlist"
@@ -139,8 +142,8 @@ export default async function ProductPage({
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-500 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
                 >
+                  <Puzzle className="h-4 w-4" />
                   {t('getExtension')}
-                  <ArrowRight className="h-4 w-4 rtl:rotate-180" />
                 </a>
               )}
 
@@ -349,10 +352,31 @@ export default async function ProductPage({
       <section id="waitlist" className="scroll-mt-20">
         <div className="mx-auto flex max-w-4xl flex-col items-center px-4 py-16 text-center sm:px-6">
           <h2 className="text-2xl font-bold">{t('page.finalCtaTitle')}</h2>
-          <p className="mt-3 max-w-xl text-muted">{tw('subtitle')}</p>
-          <div className="mt-8 flex justify-center">
-            <WaitlistForm />
-          </div>
+          {isLive ? (
+            <>
+              <p className="mt-3 max-w-xl text-muted">
+                {t('page.installSubtitle')}
+              </p>
+              <div className="mt-8 flex justify-center">
+                <a
+                  href={product.chromeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-500 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                >
+                  <Puzzle className="h-4 w-4" />
+                  {t('getExtension')}
+                </a>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="mt-3 max-w-xl text-muted">{tw('subtitle')}</p>
+              <div className="mt-8 flex justify-center">
+                <WaitlistForm />
+              </div>
+            </>
+          )}
         </div>
       </section>
     </article>

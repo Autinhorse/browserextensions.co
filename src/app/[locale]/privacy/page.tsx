@@ -1,6 +1,8 @@
 import type {Metadata} from 'next';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
+import {products} from '@/lib/products';
+import {hasPrivacyPolicy} from '@/lib/privacy';
 
 export async function generateMetadata({
   params,
@@ -25,6 +27,10 @@ export default async function PrivacyPage({
   setRequestLocale(locale);
 
   const t = await getTranslations('Privacy');
+  const tp = await getTranslations('Products');
+
+  const withPolicy = products.filter((p) => hasPrivacyPolicy(p.slug));
+  const upcoming = products.filter((p) => !hasPrivacyPolicy(p.slug));
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
@@ -36,17 +42,24 @@ export default async function PrivacyPage({
       <div className="mt-10 space-y-8">
         <p className="leading-7 text-muted">{t('intro')}</p>
 
-        <Link
-          href="/privacy/ai-chat-snapper"
-          className="block rounded-lg border border-border bg-surface/40 p-5 transition hover:bg-surface"
-        >
-          <h2 className="text-lg font-semibold">{t('aiChatSnapper.title')}</h2>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            {t('aiChatSnapper.description')}
-          </p>
-        </Link>
+        <div className="space-y-4">
+          {withPolicy.map((product) => (
+            <Link
+              key={product.slug}
+              href={`/privacy/${product.slug}`}
+              className="block rounded-lg border border-border bg-surface/40 p-5 transition hover:bg-surface"
+            >
+              <h2 className="text-lg font-semibold">{tp(`${product.slug}.name`)}</h2>
+              <p className="mt-2 text-sm leading-6 text-muted">
+                {tp(`${product.slug}.tagline`)}
+              </p>
+            </Link>
+          ))}
+        </div>
 
-        <p className="leading-7 text-muted">{t('comingSoon')}</p>
+        {upcoming.length > 0 && (
+          <p className="leading-7 text-muted">{t('comingSoon')}</p>
+        )}
         <p className="leading-7 text-muted">{t('contact')}</p>
       </div>
     </article>

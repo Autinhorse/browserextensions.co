@@ -17,7 +17,9 @@ export const products: Product[] = [
     slug: 'ai-chat-snapper',
     iconSrc: '/ai-chat-snapper-v3.png',
     accent: 'from-sky-500 to-cyan-500',
-    status: 'beta',
+    status: 'available',
+    chromeUrl:
+      'https://chromewebstore.google.com/detail/ai-chat-snapper/bnneoiofmanhbcemneehlejkmpfgoeem',
   },
   {
     slug: 'web-snapper',

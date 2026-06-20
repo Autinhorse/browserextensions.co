@@ -1,0 +1,427 @@
+{
+  "Site": {
+    "name": "Browser Extensions",
+    "tagline": "Une suite grandissante d'extensions de navigateur ciblées qui allègent le travail quotidien - capturez des pages, exportez vos conversations IA, résumez des avis, et bien plus."
+  },
+  "Nav": {
+    "products": "Produits",
+    "features": "Fonctionnalités",
+    "docs": "Docs",
+    "guides": "Guides",
+    "blog": "Blog",
+    "feedback": "Retours"
+  },
+  "Home": {
+    "hero": {
+      "badge": "3 extensions et plus à venir",
+      "title": "Des extensions de navigateur qui allègent le travail quotidien.",
+      "subtitle": "<brand>browserextensions.co</brand> est une suite grandissante d'outils de navigation ciblés - capturez des pages web, exportez vos conversations IA, résumez des avis produits, et bien d'autres à venir. Chacun supprime discrètement les frictions de votre journée, garde vos données sur votre appareil par défaut et se synchronise avec les applications que vous utilisez déjà.",
+      "ctaPrimary": "Découvrir les extensions",
+      "ctaSecondary": "Rejoindre la liste d'attente"
+    },
+    "products": {
+      "title": "Nos extensions",
+      "subtitle": "Chacune fait une seule chose, et la fait bien."
+    },
+    "features": {
+      "title": "Conçu comme il faut",
+      "local": {
+        "title": "Local d'abord",
+        "desc": "Vos données sont enregistrées sur votre appareil par défaut. Vous gardez le contrôle."
+      },
+      "formats": {
+        "title": "Exportez partout",
+        "desc": "Word, PDF, HTML, Markdown, JSON, Notion, Google Docs et plus encore."
+      },
+      "privacy": {
+        "title": "Confidentialité dès la conception",
+        "desc": "Nous ne suivons jamais votre contenu. Nous ne collectons que ce que vous choisissez de partager."
+      },
+      "fast": {
+        "title": "Rapide et léger",
+        "desc": "Conçu pour rester discret et ne jamais ralentir votre navigateur."
+      }
+    },
+    "waitlist": {
+      "title": "Soyez les premiers informés",
+      "subtitle": "Recevez des notifications sur les nouvelles extensions, les fonctionnalités Pro et les mises à jour majeures.",
+      "placeholder": "you@example.com",
+      "button": "Me notifier",
+      "success": "Vous êtes sur la liste. Merci !",
+      "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "invalid": "Veuillez saisir une adresse e-mail valide."
+    }
+  },
+  "Products": {
+    "status": {
+      "available": "Disponible",
+      "beta": "En bêta",
+      "coming-soon": "Bientôt disponible"
+    },
+    "learnMore": "En savoir plus",
+    "getExtension": "Ajouter à Chrome",
+    "joinWaitlist": "Rejoindre la liste d'attente",
+    "featuresTitle": "Ce qu'elle fait",
+    "page": {
+      "highlightsTitle": "Points forts",
+      "deepDiveTitle": "Fonctionnalités en détail",
+      "platformsTitle": "Plateformes prises en charge",
+      "formatsTitle": "Formats d'export",
+      "destinationsTitle": "Enregistrer vers",
+      "privacyTitle": "Confidentialité et autorisations",
+      "privacyLink": "Lire la politique de confidentialité",
+      "howTitle": "Comment ça marche",
+      "useCasesTitle": "Cas d'usage",
+      "faqTitle": "FAQ",
+      "finalCtaTitle": "Prêt à l'essayer ?",
+      "installSubtitle": "Ajoutez AI Chat Snapper à Chrome — gratuit, sans compte requis.",
+      "visualLabel": "Aperçu du flux de travail"
+    },
+    "web-snapper": {
+      "name": "Web Snapper",
+      "tagline": "Transformez n'importe quelle page web en ressource consultable, annotable et archivable.",
+      "seoTitle": "Web Snapper - Captures pleine page, PDF consultable et archivage web",
+      "seoDescription": "Capturez des pages web entières ou des régions, exportez des PDF consultables et des fichiers HTML uniques, masquez et annotez, extrayez du Markdown, et archivez tout dans un historique local privé - le tout sur votre appareil.",
+      "description": "Un atelier de capture web qui place la confidentialité au premier plan. Réalisez des captures pleine page ou de régions et exportez-les en PDF consultable, PNG, fichier HTML unique ou Markdown épuré ; extrayez uniquement l'article principal ; masquez et annotez la page dans un seul éditeur ; et archivez chaque capture dans un historique local consultable - le tout dans un bac à sable local.",
+      "highlights": [
+        {
+          "title": "Export PDF consultable",
+          "desc": "Les PDF exportés contiennent une couche de texte invisible : copiez le texte, lancez une recherche en texte intégral et cliquez sur les liens d'origine - dans n'importe quelle langue, avec quasiment aucun surplus de taille de fichier."
+        },
+        {
+          "title": "Capture pleine page et par région",
+          "desc": "L'assemblage intelligent par défilement capture les longues pages et corrige les artefacts d'en-têtes fixes, ou sélectionnez par glissement la région de votre choix."
+        },
+        {
+          "title": "HTML unique sans perte",
+          "desc": "Enregistrez une page entière dans un seul fichier HTML avec images, styles et polices intégrés. Il s'ouvre hors ligne, scripts et traqueurs supprimés."
+        },
+        {
+          "title": "Modifiez la page, puis enregistrez",
+          "desc": "Un éditeur de page intégré : masquez en noir, en mosaïque, ou supprimez réellement n'importe quel élément ou texte - rien de sensible ne subsiste - puis ajoutez surlignages, notes et étiquettes avant d'exporter la page nettoyée."
+        },
+        {
+          "title": "Mode lecture et Markdown",
+          "desc": "Extrayez uniquement l'article principal - en écartant automatiquement barres latérales, en-têtes, pieds de page et publicités - puis exportez un Markdown propre et sémantique pour Obsidian, Typora ou VS Code."
+        },
+        {
+          "title": "Archive locale consultable",
+          "desc": "Chaque capture est enregistrée automatiquement dans un historique local avec vignettes, recherche en texte intégral et empreintes SHA-256 - zéro cloud, réponse instantanée."
+        }
+      ],
+      "platforms": ["N'importe quelle page web", "Articles", "Articles de recherche", "Tableaux de bord", "Documentation", "Reçus"],
+      "formats": ["PDF consultable", "PNG pleine page", "HTML unique", "Markdown", "Fichiers locaux"],
+      "privacyPoints": ["La capture, l'empaquetage, les captures d'écran et le masquage s'exécutent tous dans un bac à sable local", "Le masquage supprime réellement le contenu - aucune donnée sensible ne subsiste dans le fichier exporté", "Construit sur Chrome Manifest V3 avec des autorisations minimales basées sur activeTab", "Les fonctionnalités sans IA ne se connectent jamais à Internet ; l'historique et les annotations restent sur votre appareil"],
+      "steps": ["Ouvrez n'importe quelle page et capturez la page entière ou une région sélectionnée", "Masquez tout élément sensible, puis surlignez et annotez l'essentiel", "Exportez en PDF consultable, HTML ou Markdown - archivé automatiquement dans l'historique local"],
+      "useCases": ["Dossiers juridiques et preuves", "Archives de recherche", "Analyse concurrentielle", "Références de design", "Extraits de documentation", "Rapports de bugs", "Reçus et archives"],
+      "deepDive": [
+        {
+          "title": "Capture professionnelle",
+          "desc": "Le défilement intelligent assemble les longues pages - en gérant les en-têtes fixes et les barres latérales - ou sélectionnez une région par glissement. Exportez en PNG, PDF consultable ou Markdown en ajusté au contenu, A4 ou Letter.",
+          "visual": "Pleine page / Région"
+        },
+        {
+          "title": "Archive HTML sans perte",
+          "desc": "Enregistrez une page entière dans un seul fichier HTML avec images, styles et polices intégrés. Il s'ouvre hors ligne sous forme d'instantané statique et propre, scripts et traqueurs supprimés.",
+          "visual": "1 fichier HTML"
+        },
+        {
+          "title": "Modifiez la page, puis enregistrez",
+          "desc": "Modifiez la page avant de l'enregistrer : masquez en noir, en mosaïque, ou supprimez n'importe quel élément ou texte - réellement retiré, sans rien laisser dans l'export - puis ajoutez surlignages, notes et étiquettes. Les surlignages s'exportent même en véritables annotations PDF modifiables, et tout se restaure à la réouverture.",
+          "visual": "Modifier / Masquer / Annoter"
+        },
+        {
+          "title": "Mode lecture et Markdown",
+          "desc": "Extrayez uniquement l'article principal, en écartant automatiquement barres latérales, en-têtes, pieds de page et publicités. Exportez un Markdown propre et sémantique - vrai texte, références d'images d'origine et surlignages aux couleurs fidèles - pour Obsidian, Typora ou VS Code.",
+          "visual": "Lecture / Markdown"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Les PDF exportés sont-ils consultables ?",
+          "answer": "Oui. Les exports PDF incluent une couche de texte invisible, ce qui vous permet de sélectionner et copier le texte, de lancer une recherche en texte intégral et de cliquer sur les liens d'origine - dans n'importe quelle langue, avec quasiment aucune augmentation de la taille du fichier."
+        },
+        {
+          "question": "Le masquage supprime-t-il réellement le contenu ?",
+          "answer": "Oui. Le masquage supprime l'élément ou le texte sous-jacent plutôt que de simplement le recouvrir, de sorte qu'aucune information sensible ne subsiste dans le fichier exporté."
+        },
+        {
+          "question": "Puis-je ouvrir une page enregistrée hors ligne ?",
+          "answer": "Oui. Le fichier HTML unique intègre images, styles et polices, et supprime scripts et traqueurs, si bien qu'il s'ouvre partout sous forme d'instantané statique et propre."
+        },
+        {
+          "question": "Web Snapper télécharge-t-il mes pages ?",
+          "answer": "Non. La capture, l'empaquetage et le masquage s'exécutent dans un bac à sable local, et votre historique et vos annotations sont stockés sur votre appareil. Les fonctionnalités sans IA ne touchent jamais au réseau."
+        },
+        {
+          "question": "Où vont mes captures ?",
+          "answer": "Chaque capture est archivée dans un historique local consultable avec vignettes et empreintes SHA-256. Vous pouvez rouvrir la page d'origine, localiser le fichier ou le supprimer - tout en local, sans cloud."
+        }
+      ]
+    },
+    "ai-chat-snapper": {
+      "name": "AI Chat Snapper",
+      "tagline": "Transformez vos conversations IA en documents qui vous appartiennent.",
+      "seoTitle": "AI Chat Snapper - Exportez ChatGPT, Claude, Gemini et 7 autres conversations IA",
+      "seoDescription": "Exportez les conversations de 10 assistants IA - ChatGPT, Claude, Gemini, Grok, DeepSeek et plus - en PDF, Word, PNG, Markdown, TXT ou JSON. Enregistrez 100 % hors ligne, ou envoyez vers Notion, Google Docs et Obsidian.",
+      "description": "Enregistrez les conversations de 10 assistants IA - ChatGPT, Claude, Gemini, Grok, Mistral, DeepSeek, Qwen, Kimi, Doubao et Perplexity - en PDF, Word, PNG, Markdown, TXT ou JSON. Gardez tout 100 % hors ligne sur votre appareil, ou envoyez-le vers Notion, Google Docs ou Obsidian. Disponible en 10 langues.",
+      "highlights": [
+        {
+          "title": "Compatible avec 10 assistants IA",
+          "desc": "Exportez depuis ChatGPT, Claude, Gemini, Grok, Mistral, DeepSeek, Qwen, Kimi, Doubao et Perplexity."
+        },
+        {
+          "title": "Six formats d'export",
+          "desc": "Enregistrez en PDF, Word, image PNG, Markdown, TXT ou JSON."
+        },
+        {
+          "title": "Enregistrez là où vous travaillez",
+          "desc": "Conservez un fichier local, ou envoyez vers Notion, Google Docs ou votre coffre Obsidian."
+        },
+        {
+          "title": "Option 100 % hors ligne",
+          "desc": "Les exports locaux ne quittent jamais votre appareil - sans compte, sans envoi, entièrement privé."
+        },
+        {
+          "title": "Disponible en 10 langues",
+          "desc": "Utilisez l'extension dans votre langue, avec 10 langues d'interface intégrées."
+        },
+        {
+          "title": "Gardez votre historique",
+          "desc": "Ne perdez plus jamais une conversation IA importante."
+        }
+      ],
+      "platforms": ["ChatGPT", "Claude", "Gemini", "Grok", "Mistral", "DeepSeek", "Qwen", "Kimi", "Doubao", "Perplexity"],
+      "formats": ["PDF", "Word", "PNG", "Markdown", "TXT", "JSON"],
+      "destinations": ["Fichier local", "Notion", "Google Docs", "Obsidian"],
+      "privacyPoints": ["Les exports locaux restent 100 % sur votre appareil", "Fonctionne entièrement hors ligne - aucun compte ni connexion requis", "Aucune analyse, publicité ni suivi", "Les exports optionnels vers Notion, Google Docs et Obsidian ne s'exécutent que lorsque vous le choisissez"],
+      "steps": ["Ouvrez une conversation dans n'importe quel assistant IA pris en charge", "Choisissez un format - PDF, Word, PNG, Markdown, TXT ou JSON", "Enregistrez en local ou envoyez vers Notion, Google Docs ou Obsidian"],
+      "useCases": ["Conversations de recherche", "Archives d'aide au code", "Notes clients et projets", "Bibliothèques de prompts", "Documents générés par IA à partager"],
+      "deepDive": [
+        {
+          "title": "Exportez des documents lisibles",
+          "desc": "Transformez de longues conversations IA en fichiers structurés, plus faciles à lire, à rechercher et à partager.",
+          "visual": "Conversation -> Document"
+        },
+        {
+          "title": "Choisissez le bon format",
+          "desc": "Enregistrez des PDF soignés, des fichiers Word modifiables, des instantanés PNG, du Markdown épuré, du TXT ou des archives JSON.",
+          "visual": "PDF / DOCX / PNG"
+        },
+        {
+          "title": "Enregistrez là où vous travaillez",
+          "desc": "Conservez vos exports en fichiers locaux, ou envoyez-les vers Notion, Google Docs ou votre coffre Obsidian local.",
+          "visual": "Notion / Obsidian"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelles plateformes IA sont prises en charge ?",
+          "answer": "AI Chat Snapper fonctionne avec 10 assistants IA : ChatGPT, Claude, Gemini, Grok, Mistral, DeepSeek, Qwen, Kimi, Doubao et Perplexity."
+        },
+        {
+          "question": "Mes conversations sont-elles envoyées vers vos serveurs ?",
+          "answer": "Non. Les exports sont traités localement sur votre appareil, et l'extension peut fonctionner 100 % hors ligne. Les exports optionnels vers Notion, Google Docs et Obsidian vont directement de votre navigateur vers la destination que vous choisissez."
+        },
+        {
+          "question": "Quels formats d'export et destinations puis-je utiliser ?",
+          "answer": "Vous pouvez exporter en PDF, Word, image PNG, Markdown, TXT et JSON, et enregistrer vers un fichier local, Notion, Google Docs ou Obsidian."
+        },
+        {
+          "question": "L'extension est-elle disponible dans ma langue ?",
+          "answer": "AI Chat Snapper est livré avec 10 langues d'interface, ce qui vous permet de l'utiliser dans la langue de votre choix."
+        },
+        {
+          "question": "Où puis-je lire la politique de confidentialité ?",
+          "answer": "La politique de confidentialité d'AI Chat Snapper est disponible depuis cette page produit et la page de confidentialité du site."
+        }
+      ]
+    },
+    "review-snapper": {
+      "name": "Review Snapper",
+      "tagline": "Comprenez en un coup d'œil ce que pensent vraiment les acheteurs.",
+      "seoTitle": "Review Snapper - Collectez et résumez les avis produits",
+      "seoDescription": "Collectez les avis produits depuis les pages d'achat, résumez le sentiment et comparez ce que pensent réellement les clients avant d'acheter.",
+      "description": "Extrayez les avis d'utilisateurs depuis les pages produits, puis résumez et comparez le sentiment pour prendre vos décisions d'achat plus vite et en confiance.",
+      "highlights": [
+        {
+          "title": "Collectez les avis",
+          "desc": "Rassemblez les avis d'utilisateurs depuis les sites d'achat pris en charge."
+        },
+        {
+          "title": "Résumez et comparez",
+          "desc": "Visualisez le sentiment global et comparez les produits côte à côte."
+        },
+        {
+          "title": "Décidez plus vite",
+          "desc": "Faites le tri dans le bruit et achetez en toute confiance."
+        }
+      ],
+      "platforms": ["Pages produits", "Sites d'achat", "Sections d'avis"],
+      "formats": ["Résumé", "Sentiment", "Comparaison", "CSV", "Markdown"],
+      "privacyPoints": ["Lit les avis uniquement lorsque vous le demandez", "Conçu pour une recherche produit ciblée", "Aucune publicité ni suivi du contenu des avis"],
+      "steps": ["Ouvrez une page produit prise en charge", "Collectez les avis clients disponibles", "Résumez le sentiment et comparez les thèmes clés"],
+      "useCases": ["Décisions d'achat", "Recherche produit", "Comparaison de concurrents", "Retours du marché", "Synthèses des tendances d'avis"],
+      "deepDive": [
+        {
+          "title": "Collectez le signal utile",
+          "desc": "Rassemblez les avis clients visibles depuis les pages produits pour travailler à partir d'une vue unique et organisée.",
+          "visual": "Avis / Thèmes"
+        },
+        {
+          "title": "Résumez les schémas récurrents",
+          "desc": "Repérez les éloges, les plaintes, les compromis et le sentiment qui reviennent, sans lire chaque avis manuellement.",
+          "visual": "Pour / Contre"
+        },
+        {
+          "title": "Comparez avant d'acheter",
+          "desc": "Servez-vous des thèmes d'avis pour comparer les produits côte à côte et décider plus vite.",
+          "visual": "A vs B"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Review Snapper est-il disponible dès maintenant ?",
+          "answer": "Review Snapper arrive bientôt. Vous pouvez rejoindre la liste d'attente pour suivre les nouveautés."
+        },
+        {
+          "question": "Que résume-t-il ?",
+          "answer": "Il est conçu pour résumer les thèmes des avis clients, le sentiment, les avantages, les inconvénients et les points de comparaison."
+        },
+        {
+          "question": "Peut-il comparer des produits ?",
+          "answer": "La comparaison de produits fait partie du flux de travail prévu."
+        }
+      ]
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Guides, tutoriels et nouveautés pour tirer le meilleur parti de vos extensions de navigateur.",
+    "metaTitle": "Blog",
+    "metaDescription": "Tutoriels et guides de browserextensions.co - exportez vos conversations IA, capturez le web et travaillez plus efficacement dans votre navigateur.",
+    "readingTime": "{minutes} min de lecture",
+    "backToBlog": "Retour à tous les articles",
+    "empty": "Aucun article pour l'instant. Revenez bientôt."
+  },
+  "Footer": {
+    "tagline": "Une suite grandissante d'extensions de navigateur ciblées qui allègent le travail quotidien.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "legal": "Mentions légales",
+    "about": "À propos",
+    "docs": "Docs",
+    "guides": "Guides",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "rights": "Tous droits réservés."
+  },
+  "Privacy": {
+    "title": "Confidentialité",
+    "subtitle": "Chaque extension de navigateur dispose de sa propre politique de confidentialité afin que les autorisations et le traitement des données restent clairs.",
+    "intro": "browserextensions.co conçoit des extensions de navigateur qui placent le local au premier plan. Les politiques de confidentialité propres à chaque produit expliquent à quoi chaque extension peut accéder, pourquoi elle a besoin de ces autorisations et comment vos données sont traitées.",
+    "aiChatSnapper": {
+      "title": "AI Chat Snapper",
+      "description": "Politique de confidentialité pour l'export de conversations IA en local ou vers les destinations optionnelles Notion et Google Docs."
+    },
+    "comingSoon": "Les politiques de confidentialité de Web Snapper et Review Snapper seront publiées avant la sortie de ces extensions.",
+    "contact": "Des questions ? Contactez-nous à support@browserextensions.co."
+  },
+  "Terms": {
+    "title": "Conditions d'utilisation",
+    "subtitle": "Conditions d'utilisation de browserextensions.co et de nos extensions de navigateur.",
+    "updated": "Dernière mise à jour : 2026-06-01",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptation de ces conditions",
+        "body": "En utilisant browserextensions.co ou toute extension de navigateur que nous publions, vous acceptez ces conditions d'utilisation. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le site ni les extensions."
+      },
+      "products": {
+        "title": "Nos produits",
+        "body": "Nos extensions sont des outils de productivité pour capturer, exporter, enregistrer et comprendre le contenu web. Les fonctionnalités peuvent évoluer au fil du temps à mesure que nous améliorons les produits."
+      },
+      "responsibility": {
+        "title": "Votre responsabilité",
+        "body": "Vous êtes responsable du contenu que vous capturez, exportez, téléversez, stockez ou partagez avec nos extensions. Vous devez utiliser le site et les extensions de manière légale et respecter les droits et les conditions des sites web et services avec lesquels vous les utilisez."
+      },
+      "thirdParties": {
+        "title": "Services tiers",
+        "body": "Certaines fonctionnalités optionnelles peuvent se connecter à des services tiers tels que Notion, Google Drive, Google Docs, Chrome Web Store, des prestataires de paiement ou d'autres plateformes. Votre utilisation de ces services est régie par leurs propres conditions et politiques de confidentialité."
+      },
+      "availability": {
+        "title": "Disponibilité et modifications",
+        "body": "Le site et les extensions sont fournis en l'état. Nous pouvons mettre à jour, suspendre, retirer ou modifier des fonctionnalités à tout moment, notamment pour améliorer la sécurité, la compatibilité ou l'expérience utilisateur."
+      },
+      "paid": {
+        "title": "Fonctionnalités payantes",
+        "body": "Si nous introduisons des forfaits payants, des fonctionnalités Pro, des abonnements ou des licences, la page de paiement ou la page produit décrira la tarification, le renouvellement, l'annulation et les conditions de remboursement avant l'achat."
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "body": "browserextensions.co, les noms de nos extensions, les logos, les conceptions d'interface, le contenu du site web et les supports produits nous appartiennent ou appartiennent à nos concédants de licence. Vous ne pouvez pas les copier, les modifier, les redistribuer ni les utiliser d'une manière qui suggère un soutien sans autorisation."
+      },
+      "disclaimer": {
+        "title": "Avertissement",
+        "body": "Le site et les extensions sont fournis sans garantie d'aucune sorte. Nous ne garantissons pas qu'ils seront ininterrompus, exempts d'erreurs ou adaptés à tous les cas d'usage."
+      },
+      "liability": {
+        "title": "Limitation de responsabilité",
+        "body": "Dans toute la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de la perte de données, de profits ou d'activité découlant de votre utilisation du site ou des extensions."
+      },
+      "changes": {
+        "title": "Modifications de ces conditions",
+        "body": "Nous pouvons mettre à jour ces conditions de temps à autre. Le cas échéant, nous mettrons à jour la date ci-dessus. La poursuite de l'utilisation du site ou des extensions après des modifications signifie que vous acceptez les conditions mises à jour."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Si vous avez des questions sur ces conditions, contactez-nous à support@browserextensions.co."
+      }
+    }
+  },
+  "About": {
+    "title": "À propos de browserextensions.co",
+    "subtitle": "Un petit studio qui conçoit des extensions de navigateur ciblées faisant une chose bien - tout en gardant vos données sur votre appareil.",
+    "sections": {
+      "mission": {
+        "title": "Ce qui nous anime",
+        "body": "browserextensions.co conçoit une suite grandissante d'extensions de navigateur pour le travail quotidien : capturer des pages, exporter des conversations IA et donner du sens aux avis. Chacune est pensée pour être rapide, ciblée et sans le superflu qui rend la plupart des extensions pénibles. Nous préférons proposer quelques outils sur lesquels les gens comptent vraiment qu'une longue liste à laquelle personne ne fait confiance."
+      },
+      "products": {
+        "title": "Ce que nous construisons",
+        "body": "Nos outils actuels sont Web Snapper pour capturer et enregistrer des pages web, AI Chat Snapper pour exporter les conversations de ChatGPT, Claude, Gemini et sept autres assistants IA, et Review Snapper pour résumer les avis produits. Ils partagent une philosophie commune : une mission claire, une interface épurée et aucune surprise."
+      },
+      "privacy": {
+        "title": "La confidentialité par défaut",
+        "body": "Nous concevons en plaçant le local au premier plan. Partout où c'est possible, nos extensions effectuent leur travail directement sur votre appareil, sans compte et sans envoyer votre contenu vers un serveur. AI Chat Snapper, par exemple, génère ses exports entièrement dans votre navigateur et peut fonctionner totalement hors ligne. Vos données vous appartiennent - nous préférons ne pas les manipuler du tout."
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "body": "Nous lisons tout. Partagez vos retours, demandez une fonctionnalité ou signalez un bug via notre page de retours, ou écrivez-nous directement à support@browserextensions.co."
+      }
+    }
+  },
+  "Guides": {
+    "title": "Guides",
+    "subtitle": "Guides pas à pas pour enregistrer et exporter vos conversations IA.",
+    "metaTitle": "Guides",
+    "metaDescription": "Guides pas à pas pour exporter et sauvegarder vos conversations IA - ChatGPT, Claude, Gemini et plus - sur browserextensions.co.",
+    "readingTime": "{minutes} min de lecture",
+    "updated": "Mis à jour le {date}",
+    "backToGuides": "Retour à tous les guides",
+    "empty": "Aucun guide pour l'instant. Revenez bientôt."
+  },
+  "Docs": {
+    "title": "Documentation",
+    "subtitle": "Documentation de référence pour nos extensions de navigateur - configuration, fonctionnalités et réponses.",
+    "metaTitle": "Documentation",
+    "metaDescription": "Documentation produit pour les extensions de browserextensions.co - prise en main, plateformes prises en charge, formats d'export, stockage et FAQ.",
+    "empty": "La documentation arrive bientôt."
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "home": "Retour à l'accueil"
+  }
+}

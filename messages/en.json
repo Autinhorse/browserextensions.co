@@ -59,7 +59,7 @@
       "coming-soon": "Coming soon"
     },
     "learnMore": "Learn more",
-    "getExtension": "Get the extension",
+    "getExtension": "Add to Chrome",
     "joinWaitlist": "Join the waitlist",
     "featuresTitle": "What it does",
     "page": {
@@ -74,6 +74,7 @@
       "useCasesTitle": "Use cases",
       "faqTitle": "FAQ",
       "finalCtaTitle": "Ready to try it?",
+      "installSubtitle": "Add AI Chat Snapper to Chrome — free, no account required.",
       "visualLabel": "Workflow preview"
     },
     "web-snapper": {
@@ -325,7 +326,7 @@
       "title": "AI Chat Snapper",
       "description": "Privacy policy for exporting AI conversations locally or to optional Notion and Google Docs destinations."
     },
-    "comingSoon": "Privacy policies for Web Snapper and Review Snapper will be published before those extensions are released.",
+    "comingSoon": "Privacy policies for extensions still in development will be published before they launch.",
     "contact": "Questions? Contact us at support@browserextensions.co."
   },
   "Terms": {
