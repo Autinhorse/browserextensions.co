@@ -3,6 +3,7 @@ import {products} from '@/lib/products';
 import {getAllPosts} from '@/lib/blog';
 import {getAllGuides} from '@/lib/guides';
 import {getDocProducts, getDocSlugs} from '@/lib/docs';
+import {privacyDocs} from '@/lib/privacy';
 
 const SITE_URL = 'https://browserextensions.co';
 
@@ -19,8 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/guides',
     '/blog',
     '/privacy',
-    '/privacy/ai-chat-snapper',
     '/terms',
+    // Per-product privacy policies are derived from the registry so new
+    // products show up automatically (see src/lib/privacy.ts).
+    ...Object.keys(privacyDocs).map((slug) => `/privacy/${slug}`),
   ].map((path) => ({path, lastModified: now}));
 
   const productPaths: Entry[] = products.map((product) => ({
